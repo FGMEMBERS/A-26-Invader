@@ -27,15 +27,18 @@
     <object-name>profondeurG</object-name>
     <object-name>profondeurD</object-name>
     <object-name>direction</object-name>
-    <object-name>axeA</object-name>
+    <object-name>axeAH</object-name>
+    <object-name>axeAB</object-name>
     <object-name>roueA</object-name>
     <object-name>porteAG</object-name>
     <object-name>porteAD</object-name>
-    <object-name>axeG</object-name>
+    <object-name>axeGH</object-name>
+    <object-name>axeGB</object-name>
     <object-name>roueG</object-name>
     <object-name>porteGE</object-name>
     <object-name>porteGI</object-name>
-    <object-name>axeD</object-name>
+    <object-name>axeDH</object-name>
+    <object-name>axeDB</object-name>
     <object-name>roueD</object-name>
     <object-name>porteDE</object-name>
     <object-name>porteDI</object-name>
@@ -89,15 +92,18 @@
     <object-name>profondeurG</object-name>
     <object-name>profondeurD</object-name>
     <object-name>direction</object-name>
-    <object-name>axeA</object-name>
+    <object-name>axeAH</object-name>
+    <object-name>axeAB</object-name>
     <object-name>roueA</object-name>
     <object-name>porteAG</object-name>
     <object-name>porteAD</object-name>
-    <object-name>axeG</object-name>
+    <object-name>axeGH</object-name>
+    <object-name>axeGB</object-name>
     <object-name>roueG</object-name>
     <object-name>porteGE</object-name>
     <object-name>porteGI</object-name>
-    <object-name>axeD</object-name>
+    <object-name>axeDH</object-name>
+    <object-name>axeDB</object-name>
     <object-name>roueD</object-name>
     <object-name>porteDE</object-name>
     <object-name>porteDI</object-name>
@@ -450,7 +456,8 @@
   <animation>
     <name>TrainAvant</name>
     <object-name>roueA</object-name>
-    <object-name>axeA</object-name>
+    <object-name>axeAH</object-name>
+    <object-name>axeAB</object-name>
   </animation>
 
   <animation>
@@ -476,7 +483,8 @@
   <animation>
     <name>TrainGauche</name>
     <object-name>roueG</object-name>
-    <object-name>axeG</object-name>
+    <object-name>axeGH</object-name>
+    <object-name>axeGB</object-name>
   </animation>
 
   <animation>
@@ -502,7 +510,8 @@
   <animation>
     <name>TrainDroit</name>
     <object-name>roueD</object-name>
-    <object-name>axeD</object-name>
+    <object-name>axeDH</object-name>
+    <object-name>axeDB</object-name>
   </animation>
 
   <animation>
@@ -644,6 +653,73 @@
       <x> 1 </x>
       <y> 0 </y>
       <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Compression -->
+  <animation>
+    <name>RoueAvant</name>
+    <object-name>roueA</object-name>
+    <object-name>axeAB</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>RoueAvant</object-name>
+    <property>/gear/gear[0]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> -0.08 </dep></entry>
+      <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  0.30 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0.039885 </x>
+      <y> 0.000000 </y>
+      <z> 0.187644 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>RoueGauche</name>
+    <object-name>roueG</object-name>
+    <object-name>axeGB</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>RoueGauche</object-name>
+    <property>/gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> -0.08 </dep></entry>
+      <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  0.30 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0.0 </x>
+      <y> 0.0 </y>
+      <z> 1.0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>RoueDroite</name>
+    <object-name>roueD</object-name>
+    <object-name>axeDB</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>RoueDroite</object-name>
+    <property>/gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> -0.08 </dep></entry>
+      <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  0.30 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0.0 </x>
+      <y> 0.0 </y>
+      <z> 1.0 </z>
     </axis>
   </animation>
 
