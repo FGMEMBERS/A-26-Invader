@@ -21,6 +21,11 @@
       </livery>
     </model>
 
+    <submodels> 
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/A-26-Invader/Models/Effects/submodels.xml</path>
+    </submodels>
+
     <sound>
       <path>Aircraft/A-26-Invader/Sounds/a26-sound.xml</path>
     </sound>
@@ -49,7 +54,15 @@
       <title>A 26 Invader</title>
       <key>
         <name>d</name>
-        <desc>Open/Close door</desc>
+        <desc>Open/Close crew door</desc>
+      </key>
+      <key>
+        <name>D</name>
+        <desc>Open/Close passanger door</desc>
+      </key>
+      <key>
+        <name>e</name>
+        <desc>Guns fire</desc>
       </key>
     </help>
 
@@ -86,10 +99,15 @@
   </input>
  
   <nasal>
-    <b17>
+    <a26>
       <file>Aircraft/A-26-Invader/Nasal/doors.nas</file>
       <file>Aircraft/A-26-Invader/Nasal/liveries.nas</file>
-    </b17>
+      <file>Aircraft/A-26-Invader/Nasal/light.nas</file>
+    </a26>
+    <guns>
+      <file>Aircraft/A-26-Invader/Nasal/weapons.nas</file>
+      <file>Aircraft/A-26-Invader/Nasal/revi.nas</file>
+    </guns>
   </nasal>
 
 </PropertyList>

@@ -322,6 +322,44 @@
       <max-dist>1000</max-dist>
     </stall>
  
+    <gun>
+      <name>Guns left</name>
+      <mode>looped</mode>
+      <path>Aircraft/A-26-Invader/Sounds/gunfire_1.wav</path>
+      <condition>
+        <and>
+          <property>controls/armament/trigger</property>
+          <property>ai/submodels/submodel[0]/count</property>
+        </and>
+      </condition>
+      <position>
+        <x-m> -3.437 </x-m>
+        <y-m> -5.571 </y-m>
+        <z-m> -0.088 </z-m>
+      </position>
+      <reference-dist>100</reference-dist>
+      <max-dist>500</max-dist>
+    </gun>
+
+    <gun>
+      <name>Guns right</name>
+      <mode>looped</mode>
+      <path>Aircraft/A-26-Invader/Sounds/gunfire_1.wav</path>
+      <condition>
+        <and>
+          <property>controls/armament/trigger</property>
+          <property>ai/submodels/submodel[0]/count</property>
+        </and>
+      </condition>
+      <position>
+        <x-m> -3.437 </x-m>
+        <y-m>  5.571 </y-m>
+        <z-m> -0.088 </z-m>
+      </position>
+      <reference-dist>100</reference-dist>
+      <max-dist>500</max-dist>
+    </gun>
+
   </fx>
  
 </PropertyList>

@@ -1,0 +1,451 @@
+  <submodel>
+    <name>noze-guns-bullet2L</name>
+    <model>Models/Geometry/null.ac</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.2</delay>
+    <count>-1</count>
+    <x-offset> -25,229658800 </x-offset> --> <!-- -7.690 m -->
+    <y-offset>  -0,583989501 </y-offset> <!-- -0.178 m -->
+    <z-offset>  -1,696194230 </z-offset> <!-- -0.517 m -->
+    <yaw-offset>0.0</yaw-offset>
+    <pitch-offset>0.1</pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00136354</eda>
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/A-26-Invader/Models/Effects/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+  <submodel>
+    <name>tracer2L</name>
+    <model>Aircraft/A-26-Invader/Models/Effects/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.6</delay>
+    <count>-1</count>
+    <x-offset> -25,229658800 </x-offset> <!-- -7.690 m -->
+    <y-offset>  -0,583989501 </y-offset> <!-- -0.178 m -->
+    <z-offset>  -1,696194230 </z-offset> <!-- -0.517 m -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda>
+  </submodel>
+
+  <submodel>
+    <name>noze-guns-bullet2R</name>
+    <model>Models/Geometry/null.ac</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.2</delay>
+    <count>-1</count>
+    <x-offset> -25,229658800 </x-offset> <!-- -7.690 m -->
+    <y-offset>   0,583989501 </y-offset> <!--  0.178 m -->
+    <z-offset>  -1,696194230 </z-offset> <!-- -0.517 m -->
+    <yaw-offset>0.0</yaw-offset>
+    <pitch-offset>0.1</pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00136354</eda>
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/A-26-Invader/Models/Effects/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+  <submodel>
+    <name>tracer2R</name>
+    <model>Aircraft/A-26-Invader/Models/Effects/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.6</delay>
+    <count>-1</count>
+    <x-offset> -25,229658800 </x-offset> <!-- -7.690 m -->
+    <y-offset>   0,583989501 </y-offset> <!--  0.178 m -->
+    <z-offset>  -1,696194230 </z-offset> <!-- -0.517 m -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda>
+  </submodel>
+
+  <submodel>
+    <name>noze-guns-bullet3L</name>
+    <model>Models/Geometry/null.ac</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.2</delay>
+    <count>-1</count>
+    <x-offset> -25,492126000 </x-offset> <!-- -7.690 m -->
+    <y-offset>  -0,583989501 </y-offset> <!-- -0.178 m -->
+    <z-offset>  -2,188320210 </z-offset> <!-- -0.667 m -->
+    <yaw-offset>0.0</yaw-offset>
+    <pitch-offset>0.1</pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00136354</eda>
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/A-26-Invader/Models/Effects/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+  <submodel>
+    <name>tracer3L</name>
+    <model>Aircraft/A-26-Invader/Models/Effects/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.6</delay>
+    <count>-1</count>
+    <x-offset> -25,492126000 </x-offset> <!-- -7.690 m -->
+    <y-offset>  -0,583989501 </y-offset> <!-- -0.178 m -->
+    <z-offset>  -2,188320210 </z-offset> <!-- -0.667 m -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda>
+  </submodel>
+
+  <submodel>
+    <name>noze-guns-bullet3R</name>
+    <model>Models/Geometry/null.ac</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.2</delay>
+    <count>-1</count>
+    <x-offset> -25,492126000 </x-offset> <!-- -7.690 m -->
+    <y-offset>   0,583989501 </y-offset> <!--  0.178 m -->
+    <z-offset>  -2,188320210 </z-offset> <!-- -0.667 m -->
+    <yaw-offset>0.0</yaw-offset>
+    <pitch-offset>0.1</pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00136354</eda>
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/A-26-Invader/Models/Effects/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+  <submodel>
+    <name>tracer3R</name>
+    <model>Aircraft/A-26-Invader/Models/Effects/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.6</delay>
+    <count>-1</count>
+    <x-offset> -25,492126000 </x-offset> <!-- -7.690 m -->
+    <y-offset>   0,583989501 </y-offset> <!--  0.178 m -->
+    <z-offset>  -2,188320210 </z-offset> <!-- -0.667 m -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda>
+  </submodel>
+
+  <submodel>
+    <name>noze-guns-bullet4L</name>
+    <model>Models/Geometry/null.ac</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.2</delay>
+    <count>-1</count>
+    <x-offset> -25,688976400 </x-offset> <!-- -7.830 m -->
+    <y-offset>  -0,583989501 </y-offset> <!-- -0.178 m -->
+    <z-offset>  -2,778871390 </z-offset> <!-- -0.847 m -->
+    <yaw-offset>0.0</yaw-offset>
+    <pitch-offset>0.1</pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00136354</eda>
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/A-26-Invader/Models/Effects/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+  <submodel>
+    <name>tracer4L</name>
+    <model>Aircraft/A-26-Invader/Models/Effects/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.6</delay>
+    <count>-1</count>
+    <x-offset> -25,688976400 </x-offset> <!-- -7.830 m -->
+    <y-offset>  -0,583989501 </y-offset> <!-- -0.178 m -->
+    <z-offset>  -2,778871390 </z-offset> <!-- -0.847 m -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda>
+  </submodel>
+
+  <submodel>
+    <name>noze-guns-bullet4R</name>
+    <model>Models/Geometry/null.ac</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.2</delay>
+    <count>-1</count>
+    <x-offset> -25,688976400 </x-offset> <!-- -7.830 m -->
+    <y-offset>   0,583989501 </y-offset> <!--  0.178 m -->
+    <z-offset>  -2,778871390 </z-offset> <!-- -0.847 m -->
+    <yaw-offset>0.0</yaw-offset>
+    <pitch-offset>0.1</pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00136354</eda>
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/A-26-Invader/Models/Effects/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+  <submodel>
+    <name>tracer4R</name>
+    <model>Aircraft/A-26-Invader/Models/Effects/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.6</delay>
+    <count>-1</count>
+    <x-offset> -25,688976400 </x-offset> <!-- -7.830 m -->
+    <y-offset>   0,583989501 </y-offset> <!--  0.178 m -->
+    <z-offset>  -2,778871390 </z-offset> <!-- -0.847 m -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda>
+  </submodel>
+
+  <submodel>
+    <name>Wing-guns-bullet1L</name>
+    <model>Models/Geometry/null.ac</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.2</delay>
+    <count>-1</count>
+    <x-offset> -11,02690290 </x-offset> <!-- -3.361 m -->
+    <y-offset> -17,80839900 </y-offset> <!-- -5.428 m -->
+    <z-offset>  -0,31167979 </z-offset> <!-- -0.095 m -->
+    <yaw-offset>0.0</yaw-offset>
+    <pitch-offset>0.1</pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00136354</eda>
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/A-26-Invader/Models/Effects/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+  <submodel>
+    <name>Wing-tracer1L</name>
+    <model>Aircraft/A-26-Invader/Models/Effects/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.6</delay>
+    <count>-1</count>
+    <x-offset> -11,02690290 </x-offset> <!-- -3.361 m -->
+    <y-offset> -17,80839900 </y-offset> <!-- -5.428 m -->
+    <z-offset>  -0,31167979 </z-offset> <!-- -0.095 m -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda>
+  </submodel>
+
+  <submodel>
+    <name>Wing-guns-bullet1R</name>
+    <model>Models/Geometry/null.ac</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.2</delay>
+    <count>-1</count>
+    <x-offset> -11,02690290 </x-offset> <!-- -3.361 m -->
+    <y-offset>  17,80839900 </y-offset> <!--  5.428 m -->
+    <z-offset>  -0,31167979 </z-offset> <!-- -0.095 m -->
+    <yaw-offset>0.0</yaw-offset>
+    <pitch-offset>0.1</pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00136354</eda>
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/A-26-Invader/Models/Effects/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+  <submodel>
+    <name>Wing-tracer1R</name>
+    <model>Aircraft/A-26-Invader/Models/Effects/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.6</delay>
+    <count>-1</count>
+    <x-offset> -11,02690290 </x-offset> <!-- -3.361 m -->
+    <y-offset>  17,80839900 </y-offset> <!--  5.428 m -->
+    <z-offset>  -0,31167979 </z-offset> <!-- -0.095 m -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda>
+  </submodel>
+
+  <submodel>
+    <name>Wing-guns-bullet3L</name>
+    <model>Models/Geometry/null.ac</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.2</delay>
+    <count>-1</count>
+    <x-offset> -11,026902900 </x-offset> <!-- -3.361 m -->
+    <y-offset> -18,795931800 </y-offset> <!-- -5.729 m -->
+    <z-offset>  -0,255905512 </z-offset> <!-- -0.078 m -->
+    <yaw-offset>0.0</yaw-offset>
+    <pitch-offset>0.1</pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00136354</eda>
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/A-26-Invader/Models/Effects/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+  <submodel>
+    <name>Wing-tracer3L</name>
+    <model>Aircraft/A-26-Invader/Models/Effects/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.6</delay>
+    <count>-1</count>
+    <x-offset> -11,026902900 </x-offset> <!-- -3.361 m -->
+    <y-offset> -18,795931800 </y-offset> <!-- -5.729 m -->
+    <z-offset>  -0,255905512 </z-offset> <!-- -0.078 m -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda>
+  </submodel>
+
+  <submodel>
+    <name>Wing-guns-bullet3R</name>
+    <model>Models/Geometry/null.ac</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.2</delay>
+    <count>-1</count>
+    <x-offset> -11,026902900 </x-offset> <!-- -3.361 m -->
+    <y-offset>  18,795931800 </y-offset> <!--  5.729 m -->
+    <z-offset>  -0,255905512 </z-offset> <!-- -0.078 m -->
+    <yaw-offset>0.0</yaw-offset>
+    <pitch-offset>0.1</pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00136354</eda>
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/A-26-Invader/Models/Effects/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+  <submodel>
+    <name>Wing-tracer3R</name>
+    <model>Aircraft/A-26-Invader/Models/Effects/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.6</delay>
+    <count>-1</count>
+    <x-offset> -11,026902900 </x-offset> <!-- -3.361 m -->
+    <y-offset>  18,795931800 </y-offset> <!--  5.729 m -->
+    <z-offset>  -0,255905512 </z-offset> <!-- -0.078 m -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda>
+  </submodel>
+
+

@@ -16,6 +16,9 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
+    <object-name>tourvitres</object-name>
+    <object-name>tourporteG</object-name>
+    <object-name>tourporteD</object-name>
     <object-name>ailes</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
@@ -54,6 +57,8 @@
 
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
+    <object-name>vitreporteG</object-name>
+    <object-name>vitreporteD</object-name>
     <object-name>propblurG</object-name>
     <object-name>propdiscG</object-name>
     <object-name>propblurD</object-name>
@@ -66,11 +71,15 @@
     <shader>chrome</shader>
     <texture>glass_shader.png</texture>
     <object-name>vitres</object-name>
+    <object-name>vitreporteG</object-name>
+    <object-name>vitreporteD</object-name>
   </animation>
 
   <animation>
     <type>noshadow</type>
     <object-name>vitres</object-name>
+    <object-name>vitreporteG</object-name>
+    <object-name>vitreporteD</object-name>
     <object-name>propblurG</object-name>
     <object-name>propdiscG</object-name>
     <object-name>propblurD</object-name>
@@ -81,6 +90,9 @@
   <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
+    <object-name>tourvitres</object-name>
+    <object-name>tourporteG</object-name>
+    <object-name>tourporteD</object-name>
     <object-name>ailes</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
@@ -158,6 +170,177 @@
       <x-m> 0 </x-m>
       <y-m> 0 </y-m>
       <z-m> 0 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Effects de tir -->
+  <model> 
+   <path>Aircraft/A-26-Invader/Models/Effects/gunsfire.xml</path>
+   <nopreview/>
+    <offsets> 
+      <x-m> -7.620 </x-m>
+      <y-m> -0.178 </y-m>
+      <z-m> -0.367 </z-m>
+    </offsets>
+  </model>
+
+  <model> 
+   <path>Aircraft/A-26-Invader/Models/Effects/gunsfire.xml</path>
+   <nopreview/>
+    <offsets> 
+      <x-m> -7.690 </x-m>
+      <y-m> -0.178 </y-m>
+      <z-m> -0.517 </z-m>
+    </offsets>
+  </model>
+
+  <model> 
+   <path>Aircraft/A-26-Invader/Models/Effects/gunsfire.xml</path>
+   <nopreview/>
+    <offsets> 
+      <x-m> -7.770 </x-m>
+      <y-m> -0.178 </y-m>
+      <z-m> -0.667 </z-m>
+    </offsets>
+  </model>
+
+  <model> 
+   <path>Aircraft/A-26-Invader/Models/Effects/gunsfire.xml</path>
+   <nopreview/>
+    <offsets> 
+      <x-m> -7.830 </x-m>
+      <y-m> -0.178 </y-m>
+      <z-m> -0.847 </z-m>
+    </offsets>
+  </model>
+
+  <model> 
+   <path>Aircraft/A-26-Invader/Models/Effects/gunsfire.xml</path>
+   <nopreview/>
+    <offsets> 
+      <x-m> -7.620 </x-m>
+      <y-m>  0.178 </y-m>
+      <z-m> -0.367 </z-m>
+    </offsets>
+  </model>
+
+  <model> 
+   <path>Aircraft/A-26-Invader/Models/Effects/gunsfire.xml</path>
+   <nopreview/>
+    <offsets> 
+      <x-m> -7.690 </x-m>
+      <y-m>  0.178 </y-m>
+      <z-m> -0.517 </z-m>
+    </offsets>
+  </model>
+
+  <model> 
+   <path>Aircraft/A-26-Invader/Models/Effects/gunsfire.xml</path>
+   <nopreview/>
+    <offsets> 
+      <x-m> -7.770 </x-m>
+      <y-m>  0.178 </y-m>
+      <z-m> -0.667 </z-m>
+    </offsets>
+  </model>
+
+  <model> 
+   <path>Aircraft/A-26-Invader/Models/Effects/gunsfire.xml</path>
+   <nopreview/>
+    <offsets> 
+      <x-m> -7.830 </x-m>
+      <y-m>  0.178 </y-m>
+      <z-m> -0.847 </z-m>
+    </offsets>
+  </model>
+
+  <model> 
+   <path>Aircraft/A-26-Invader/Models/Effects/gunsfire.xml</path>
+   <nopreview/>
+    <offsets> 
+      <x-m> -7.620 </x-m>
+      <y-m> -0.178 </y-m>
+      <z-m> -0.367 </z-m>
+    </offsets>
+  </model>
+
+  <model> 
+   <path>Aircraft/A-26-Invader/Models/Effects/gunsfire.xml</path>
+   <nopreview/>
+    <offsets> 
+      <x-m> -7.690 </x-m>
+      <y-m> -0.178 </y-m>
+      <z-m> -0.517 </z-m>
+    </offsets>
+  </model>
+
+  <model> 
+   <path>Aircraft/A-26-Invader/Models/Effects/gunsfire.xml</path>
+   <nopreview/>
+    <offsets> 
+      <x-m> -7.770 </x-m>
+      <y-m> -0.178 </y-m>
+      <z-m> -0.667 </z-m>
+    </offsets>
+  </model>
+
+  <model> 
+   <path>Aircraft/A-26-Invader/Models/Effects/gunsfire.xml</path>
+   <nopreview/>
+    <offsets> 
+      <x-m> -3.361 </x-m>
+      <y-m> -5.428 </y-m>
+      <z-m> -0.095 </z-m>
+    </offsets>
+  </model>
+
+  <model> 
+   <path>Aircraft/A-26-Invader/Models/Effects/gunsfire.xml</path>
+   <nopreview/>
+    <offsets> 
+      <x-m> -3.437 </x-m>
+      <y-m> -5.571 </y-m>
+      <z-m> -0.088 </z-m>
+    </offsets>
+  </model>
+
+  <model> 
+   <path>Aircraft/A-26-Invader/Models/Effects/gunsfire.xml</path>
+   <nopreview/>
+    <offsets> 
+      <x-m> -3.361 </x-m>
+      <y-m> -5.729 </y-m>
+      <z-m> -0.078 </z-m>
+    </offsets>
+  </model>
+
+  <model> 
+   <path>Aircraft/A-26-Invader/Models/Effects/gunsfire.xml</path>
+   <nopreview/>
+    <offsets> 
+      <x-m> -3.361 </x-m>
+      <y-m>  5.428 </y-m>
+      <z-m> -0.095 </z-m>
+    </offsets>
+  </model>
+
+  <model> 
+   <path>Aircraft/A-26-Invader/Models/Effects/gunsfire.xml</path>
+   <nopreview/>
+    <offsets> 
+      <x-m> -3.437 </x-m>
+      <y-m>  5.571 </y-m>
+      <z-m> -0.088 </z-m>
+    </offsets>
+  </model>
+
+  <model> 
+   <path>Aircraft/A-26-Invader/Models/Effects/gunsfire.xml</path>
+   <nopreview/>
+    <offsets> 
+      <x-m> -3.361 </x-m>
+      <y-m>  5.729 </y-m>
+      <z-m> -0.078 </z-m>
     </offsets>
   </model>
 
@@ -790,6 +973,53 @@
       <x>  0 </x>
       <y> -1 </y>
       <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Portière gauche -->
+  <animation>
+    <name>PortiereGauche</name>
+    <object-name>tourporteG</object-name>
+    <object-name>vitreporteG</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>PortiereGauche</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <factor> 50 </factor>
+    <center>
+      <x-m> -4.193 </x-m>
+      <y-m> -0.741 </y-m>
+      <z-m> -0.247 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>PortiereDroite</name>
+    <object-name>tourporteD</object-name>
+    <object-name>vitreporteD</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>PortiereDroite</object-name>
+    <property>/instrumentation/doors/passenger/position-norm</property>
+    <factor> -50 </factor>
+    <center>
+      <x-m> -4.193 </x-m>
+      <y-m>  0.741 </y-m>
+      <z-m> -0.247 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 

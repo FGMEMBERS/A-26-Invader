@@ -8,14 +8,20 @@
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
     <object-name>inttourvitres</object-name>
+    <object-name>inttourporteG</object-name>
+    <object-name>inttourporteD</object-name>
 
     <!-- Objets transparents -->
     <object-name>intvitres</object-name>
+    <object-name>intvitreporteG</object-name>
+    <object-name>intvitreporteD</object-name>
   </animation>
 
   <animation>
     <type>noshadow</type>
     <object-name>intvitres</object-name>
+    <object-name>intvitreporteG</object-name>
+    <object-name>intvitreporteD</object-name>
   </animation>
 
   <animation>
@@ -23,6 +29,8 @@
     <shader>chrome</shader>
     <texture>shader.png</texture>
     <object-name>intvitres</object-name>
+    <object-name>intvitreporteG</object-name>
+    <object-name>intvitreporteD</object-name>
   </animation>
 
   <!-- Pilote -->
@@ -63,6 +71,53 @@
       <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
+
+  <!-- Portière gauche -->
+  <animation>
+    <name>IntPortiereGauche</name>
+    <object-name>inttourporteG</object-name>
+    <object-name>intvitreporteG</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>IntPortiereGauche</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <factor> 50 </factor>
+    <center>
+      <x-m> -4.193 </x-m>
+      <y-m> -0.741 </y-m>
+      <z-m> -0.247 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>IntPortiereDroite</name>
+    <object-name>inttourporteD</object-name>
+    <object-name>intvitreporteD</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>IntPortiereDroite</object-name>
+    <property>/instrumentation/doors/passenger/position-norm</property>
+    <factor> -50 </factor>
+    <center>
+      <x-m> -4.193 </x-m>
+      <y-m>  0.741 </y-m>
+      <z-m> -0.247 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
 
 </PropertyList>
 

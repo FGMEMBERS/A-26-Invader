@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Guns Fire, Helijah -->
+<PropertyList>
+
+  <path>fire.ac</path>
+
+  <animation>
+    <type>select</type>
+    <object-name>fire</object-name>
+      <condition>
+        <equals>
+          <property>sim/model/a26/lighting/flash-gun/state</property>
+        <value>true</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>material</type>
+      <object-name>fire</object-name>
+      <emission>
+        <red>   0.9 </red>
+        <green> 0.9 </green>
+        <blue>  0.6 </blue>
+      </emission>
+  </animation>
+
+</PropertyList>
