@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="a26-jsbsim-cnf.xml"> -->
+<PropertyList include="a26-yasim-cnf.xml">
+
+  <sim>
+    <description>A 26 Invader</description>
+    <author>BARANGER Emmanuel</author>
+  </sim>
+
+</PropertyList>
+
