@@ -39,16 +39,16 @@
       <control-setting axis="/controls/gear/gear-down" value="0"/>
     </cruise>
 
-    <cockpit x="7.568" y="0.290" z="0.912"/>
+    <cockpit x="4.217" y="0.400" z="0.143"/>
 
     <!-- Fuselage -->
-    <fuselage ax="7.617"  ay="0" az="-0.669" bx="-7.619" by="0" bz="-0.083" width="1.512" taper="0.9" midpoint="0.7"/>
+    <fuselage ax="7.617"  ay="0" az="-0.669" bx="-7.619" by="0" bz="-0.083" width="1.512" taper="0.7" midpoint="0.2"/>
 
-    <!-- Moteur gauche
-    <fuselage ax="3.907"  ay="2.891" az="-0.106" bx="-1.806" by="2.891" bz="-0.106" width="1.426" taper="0.9" midpoint="0.7"/> -->
+    <!-- Moteur gauche -->
+    <fuselage ax="5.370"  ay="2.891" az="-0.733" bx="-1.250" by="2.891" bz="-0.733" width="1.426" taper="0.8" midpoint="0.4"/>
 
-    <!-- Moteur droit
-    <fuselage ax="3.907"  ay="-2.891" az="-0.106" bx="-1.806" by="-2.891" bz="-0.106" width="1.426" taper="0.9" midpoint="0.7"/> -->
+    <!-- Moteur droit -->
+    <fuselage ax="5.370"  ay="-2.891" az="-0.733" bx="-1.250" by="-2.891" bz="-0.733" width="1.426" taper="0.8" midpoint="0.4"/>
 
     <!-- Wing -->
     <wing x="1.789" y="0.717" z="-0.461"
@@ -56,10 +56,11 @@
           length="9.906"
           taper="0.48"
 	  dihedral="5"
-          camber="0.1">
+          camber="0.1"
+          sweep="-3">
           <stall aoa="9.254" width="6" peak="2.5"/>
-          <flap0 start="0.023" end="0.527" lift="1.6" drag="1.6"/>
-          <flap1 start="0.536" end="0.925" lift="1.4" drag="1.3"/>
+          <flap0 start="0.025" end="0.630" lift="1.6" drag="1.6"/>
+          <flap1 start="0.630" end="0.975" lift="1.4" drag="1.3"/>
 
           <control-input axis="/controls/flight/flaps" control="FLAP0" invert="true"/>
           <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
@@ -76,9 +77,11 @@
     <hstab x="-6.219" y="0" z="-0.183"
            chord="1.982"
            length="3.460"
-           taper="0.48">
+           taper="0.48"
+           dihedral="10"
+           sweep="-2">
            <stall aoa="18" width="2" peak="1.5"/>
-           <flap0 start="0" end="0.95" lift="1.33" drag="1.5"/>
+           <flap0 start="0" end="1" lift="1.33" drag="1.5"/>
 
            <control-input axis="/controls/flight/elevator" control="FLAP0"/>
            <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
@@ -90,7 +93,8 @@
     <vstab x="-6.147" y="0" z="0.196"
            chord="2.513"
            length="2.759"
-           taper="0.58">
+           taper="0.58"
+           sweep="5">
            <stall aoa="14" width="4" peak="1.5"/>
            <flap0 start="0" end="1" lift="1.3" drag="1.5"/>
 
@@ -101,6 +105,7 @@
     </vstab>
 
     <!-- Informations : http://en.wikipedia.org/wiki/Wright_R-2600
+
          Engines : Wright R2600
                  : Power 1700 ch
                  : 14 cylinders
@@ -108,18 +113,14 @@
                  : Masse 2045 lb (930 kg)
                  : RPM 2400 - 2600
                  : Compression 6.9:1
-
-                                         Rayon * Rayon * Mass(kg)   2 *2 * 930
-                 moment d'après la doc : ________________________ = __________ = 1240
-                                                     3                   3
     -->
     <!-- Engine left -->
     <propeller x="5.020" y="2.889" z="-0.733"
                mass="1980"
                moment="95"
-               radius="2"
-								gear-ratio="0.5625"
-          			 min-rpm="900" max-rpm="1518" 
+               radius="1.9"
+               gear-ratio="0.5625"
+               min-rpm="900" max-rpm="1518" 
                cruise-speed="200"
                cruise-rpm="2400"
                cruise-power="1200"
@@ -142,9 +143,9 @@
     <propeller x="5.020" y="-2.889" z="-0.733"
                mass="1980"
                moment="95"
-               radius="2"
-								gear-ratio="0.5625"
-          			 min-rpm="900" max-rpm="1518" 
+               radius="1.9"
+               gear-ratio="0.5625"
+               min-rpm="900" max-rpm="1518" 
                cruise-speed="200"
                cruise-rpm="2400"
                cruise-power="1200"
@@ -208,7 +209,7 @@
     <tank x="2.82" y="6.0" z="-0.18" capacity="1600.0"/>
     <tank x="2.82" y="-6.0" z="-0.18" capacity="1600.0"/>
 
-    <!-- CG Théorique Centre de la corde: x=0.691 y=0.0 z=0.127" -->
+    <!-- CG Theorique Centre de la corde: x=0.691 y=0.0 z=0.127" -->
     <ballast x="8" y="0.0" z="-1.5" mass="2500"/>
 
 </airplane>
