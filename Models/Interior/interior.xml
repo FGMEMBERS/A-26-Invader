@@ -27,7 +27,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>shader.png</texture>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>intvitres</object-name>
     <object-name>intvitreporteG</object-name>
     <object-name>intvitreporteD</object-name>
@@ -82,7 +82,7 @@
   <animation>
     <type>rotate</type>
     <object-name>IntPortiereGauche</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <factor> 50 </factor>
     <center>
       <x-m> -4.193 </x-m>
@@ -105,7 +105,7 @@
   <animation>
     <type>rotate</type>
     <object-name>IntPortiereDroite</object-name>
-    <property>/instrumentation/doors/passenger/position-norm</property>
+    <property>instrumentation/doors/passenger/position-norm</property>
     <factor> -50 </factor>
     <center>
       <x-m> -4.193 </x-m>

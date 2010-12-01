@@ -116,13 +116,16 @@
     -->
     <!-- Engine left -->
     <propeller x="5.020" y="2.889" z="-0.733"
-               mass="1980"
-               moment="95"
-               radius="1.9"
+               mass="1800"
+               moment="90"
+               radius="2"
                gear-ratio="0.5625"
-               min-rpm="900" max-rpm="1518" 
+               min-rpm="1000"
+               max-rpm="1460" 
+               fine-stop="0.32"
+               coarse-stop="5"
                cruise-speed="200"
-               cruise-rpm="2400"
+               cruise-rpm="1300"
                cruise-power="1200"
                cruise-alt="17000">
                <actionpt x="5.566" y="2.889" z="-0.733"/>
@@ -141,13 +144,16 @@
 
     <!-- Engine right-->
     <propeller x="5.020" y="-2.889" z="-0.733"
-               mass="1980"
-               moment="95"
-               radius="1.9"
+               mass="1800"
+               moment="90"
+               radius="2"
                gear-ratio="0.5625"
-               min-rpm="900" max-rpm="1518" 
+               min-rpm="1000"
+               max-rpm="1460" 
+               fine-stop="0.32"
+               coarse-stop="5"
                cruise-speed="200"
-               cruise-rpm="2400"
+               cruise-rpm="1300"
                cruise-power="1200"
                cruise-alt="17000">
                <actionpt x="5.566" y="-2.889" z="-0.733"/>

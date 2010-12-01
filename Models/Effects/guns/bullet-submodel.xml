@@ -4,8 +4,8 @@
 <PropertyList>
 
   <submodel>
-    <name>Fire gun</name>
-    <model>Aircraft/A-26-Invader/Models/Effects/flack.xml</model>
+    <name>bullet splash</name>
+    <model>Aircraft/A-26-Invader/Models/Effects/guns/explosion.xml</model>
     <speed>0</speed>
     <repeat>false</repeat>
     <delay>0</delay>

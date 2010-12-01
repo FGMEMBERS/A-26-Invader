@@ -26,6 +26,8 @@ Some useful keys:
 Thanks
 ======
 
+Ernest TEUSCHER for this help
+
 ===============
 BARANGER Emmanuel
 September, 12, 2009. 
@@ -60,6 +62,8 @@ Quelques touches utiles :
 
 Remerciements
 =============
+
+Ernest TEUSCHER pour son aide
 
 ===============
 BARANGER Emmanuel

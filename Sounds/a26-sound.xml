@@ -325,7 +325,7 @@
     <gun>
       <name>Guns left</name>
       <mode>looped</mode>
-      <path>Aircraft/A-26-Invader/Sounds/gunfire_1.wav</path>
+      <path>Aircraft/A-26-Invader/Sounds/gunfire.wav</path>
       <condition>
         <and>
           <property>controls/armament/trigger</property>
@@ -344,7 +344,7 @@
     <gun>
       <name>Guns right</name>
       <mode>looped</mode>
-      <path>Aircraft/A-26-Invader/Sounds/gunfire_1.wav</path>
+      <path>Aircraft/A-26-Invader/Sounds/gunfire.wav</path>
       <condition>
         <and>
           <property>controls/armament/trigger</property>
