@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>console.ac</path>
+   
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>console</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- CONSOLE SWITCHES -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/divers/all-switches.xml</path>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/divers/all-buttons.xml</path>
+  </model>
+
+  <!-- CONSOLE MANETTE -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/trim/trim.xml</path>
+    <offsets>
+      <x-m> -0.106 </x-m>
+      <y-m> -0.154 </y-m>
+      <z-m>  0.052 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/trim/rudder.xml</path>
+    <offsets>
+      <x-m>  0.31000 </x-m>
+      <y-m>  0.03208 </y-m>
+      <z-m> -0.04246 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/Manettes/throttles.xml</path>
+    <offsets>
+      <x-m> -0.11400 </x-m>
+      <y-m> -0.05190 </y-m>
+      <z-m>  0.04535 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/Manettes/propellers.xml</path>
+    <offsets>
+      <x-m> -0.11400 </x-m>
+      <y-m>  0.02950 </y-m>
+      <z-m>  0.04535 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/Manettes/mixtures.xml</path>
+    <offsets>
+      <x-m> -0.11400 </x-m>
+      <y-m>  0.08360 </y-m>
+      <z-m>  0.04535 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/Manettes/carbair.xml</path>
+    <offsets>
+      <x-m> -0.04636 </x-m>
+      <y-m>  0.05041 </y-m>
+      <z-m> -0.04432 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/Manettes/gears.xml</path>
+    <offsets>
+      <x-m> -0.04636 </x-m>
+      <y-m> -0.02036 </y-m>
+      <z-m> -0.04426 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/Manettes/lockmixture.xml</path>
+    <offsets>
+      <x-m> -0.11400 </x-m>
+      <y-m> -0.03284 </y-m>
+      <z-m>  0.04535 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/Manettes/lockpropeller.xml</path>
+    <offsets>
+      <x-m> -0.11400 </x-m>
+      <y-m>  0.04411 </y-m>
+      <z-m>  0.04535 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/Manettes/controllock.xml</path>
+    <offsets>
+      <x-m> -0.25000 </x-m>
+      <y-m> -0.03059 </y-m>
+      <z-m>  0.13500 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/Manettes/emergencybrake.xml</path>
+    <offsets>
+      <x-m> -0.251 </x-m>
+      <y-m> -0.052 </y-m>
+      <z-m>  0.131 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/Manettes/blowers.xml</path>
+    <offsets>
+      <x-m> -0.2770 </x-m>
+      <y-m>  0.0278 </y-m>
+      <z-m>  0.1340 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/Manettes/HydraulicHandPump.xml</path>
+    <offsets>
+      <x-m> -0.119 </x-m>
+      <y-m>  0.116 </y-m>
+      <z-m>  0.010 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Feather  -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/feather/feather.xml</path>
+    <offsets>
+      <x-m> -0.190 </x-m>
+      <y-m> -0.068 </y-m>
+      <z-m>  0.140 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/feather/feather.xml</path>
+    <offsets>
+      <x-m> -0.190 </x-m>
+      <y-m>  0.085 </y-m>
+      <z-m>  0.140 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Fuel Selector  -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/fuel/fuel_selector_R.xml</path>
+    <offsets>
+      <x-m>  0.12200 </x-m>
+      <y-m>  0.03867 </y-m>
+      <z-m> -0.04674 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/fuel/fuel_selector_L.xml</path>
+    <offsets>
+      <x-m>  0.12200 </x-m>
+      <y-m> -0.07024 </y-m>
+      <z-m> -0.04674 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/fuel/fuel2.xml</path>
+    <offsets>
+      <x-m>  0.21700 </x-m>
+      <y-m>  0.03718 </y-m>
+      <z-m> -0.04674 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/fuel/HydraSelector.xml</path>
+    <offsets>
+      <x-m>  0.31500 </x-m>
+      <y-m> -0.07324 </y-m>
+      <z-m> -0.04663 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Button -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/divers/bouton2.xml</path>
+    <offsets>
+      <x-m>  0.21700 </x-m>
+      <y-m> -0.06798 </y-m>
+      <z-m> -0.04462 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Rudder Trim  -->
+<!--  <animation>
+    <type>rotate</type>
+    <object-name>RudderTrim</object-name>
+    <property>controls/flight/rudder-trim</property>
+    <factor> 400 </factor>
+    <center>
+      <x-m>  0.425 </x-m>
+      <y-m>  0.029 </y-m>
+      <z-m> -0.116 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>RudderTrim</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/flight/rudder-trim</property>
+        <step type="double">-0.05</step>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>RudderTrim</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/flight/rudder-trim</property>
+        <step type="double">0.05</step>
+      </binding>
+    </action>
+  </animation>
+
+-->
+
+  <!-- Parking  Brake  
+  <animation>
+    <type>rotate</type>
+    <object-name>ParkingBrake</object-name>
+    <property>controls/gear/brake-parking[0]</property>
+    <factor> 25 </factor>
+    <center>
+      <x-m> -4.518 </x-m>
+      <y-m>  -0.000 </y-m>
+      <z-m> -0.382 </z-m>
+    </center>
+    <axis>
+     <x> 0 </x>
+     <y> 1 </y>
+     <z> 0 </z>
+    </axis>
+  </animation>
+ 
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>ParkingBrake</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/gear/brake-parking[0]</property>
+      </binding>
+    </action>
+  </animation>
+-->
+
+  <!-- Flaps Lever  
+  <animation>
+    <type>rotate</type>
+    <object-name>FlapLever</object-name>
+    <property>controls/flight/flaps</property>
+    <factor> 45 </factor>
+    <center>
+      <x-m>  0.240 </x-m>
+      <y-m>  0.010 </y-m>
+      <z-m> -0.118 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>FlapLever</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>controls.flapsDown(1)</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>nasal</command>
+          <script>controls.flapsDown(0)</script>
+        </binding>
+      </mod-up>
+    </action>
+    <action>
+      <button>1</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>controls.flapsDown(-1)</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>nasal</command>
+          <script>controls.flapsDown(0)</script>
+        </binding>
+      </mod-up>
+    </action>
+  </animation>
+-->
+
+
+
+</PropertyList>
+

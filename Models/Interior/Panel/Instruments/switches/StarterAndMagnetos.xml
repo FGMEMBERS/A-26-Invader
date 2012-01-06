@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>StarterAndMagnetos.ac</path>
+
+  <animation>
+    <object-name>Starter</object-name>
+    <object-name>MagnetoL</object-name>
+    <object-name>MagnetoR</object-name>
+  </animation>
+
+
+  <!-- Magnetos  !!  -->
+  <animation>
+    <type>rotate</type>
+    <object-name>MagnetoL</object-name>
+    <property>controls/engines/engine[0]/magnetos</property>
+    <factor>  30 </factor>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.022 </y-m>
+      <z-m> -0.000 </z-m>
+    </center>
+    <axis>
+      <x>-1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>MagnetoR</object-name>
+    <property>controls/engines/engine[1]/magnetos</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.020 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>increaseL</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <binding>
+        <condition>
+          <less-than>
+            <property>controls/engines/engine[0]/magnetos</property>
+            <value>3</value>
+          </less-than>
+        </condition>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[0]/magnetos</property>
+        <step>1</step>
+      </binding>
+      <binding>
+        <condition>
+          <equals>
+            <property>controls/engines/engine[0]/magnetos</property>
+            <value>3</value>
+          </equals>
+        </condition>
+        <command>property-assign</command>
+        <property>controls/engines/engine[0]/starter</property>
+        <value>1</value>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/engines/engine[0]/starter</property>
+          <value>0</value>
+        </binding>
+      </mod-up>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>decreaseL</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[0]/magnetos</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>4</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>increaseR</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <binding>
+        <condition>
+          <less-than>
+            <property>controls/engines/engine[1]/magnetos</property>
+            <value>3</value>
+          </less-than>
+        </condition>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[1]/magnetos</property>
+        <step>1</step>
+      </binding>
+      <binding>
+        <condition>
+          <equals>
+            <property>controls/engines/engine[1]/magnetos</property>
+            <value>3</value>
+          </equals>
+        </condition>
+        <command>property-assign</command>
+        <property>controls/engines/engine[1]/starter</property>
+        <value>1</value>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/engines/engine[1]/starter</property>
+          <value>0</value>
+        </binding>
+      </mod-up>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>decreaseR</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <binding>
+      <command>property-adjust</command>
+        <property>controls/engines/engine[1]/magnetos</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>3</max>
+      </binding>
+    </action>
+  </animation>
+
+
+
+
+
+
+</PropertyList>

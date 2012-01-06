@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>jrb-wbd-fluxgate.ac</path>
+
+
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>3</max-m>
+ </animation>
+
+  <animation> 
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>visses</object-name>
+    <object-name>Bug</object-name>
+    <object-name>Needle</object-name>
+    
+    <!-- Objets transparents -->
+    <object-name>vitre</object-name>
+  </animation>
+
+<animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+    </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>Bug</object-name>
+    <object-name>Needle</object-name>
+    <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Needle</object-name>
+  <property>/orientation/heading-magnetic-deg</property>
+  <center>
+   <x-m>-0.03</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Bug</object-name>
+  <property>/instrumentation/magnetic-compass/bug-heading-deg</property>
+  <center>
+   <x-m>-0.03</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+  </axis>
+ </animation>
+
+</PropertyList>
+
+

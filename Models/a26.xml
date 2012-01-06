@@ -210,18 +210,38 @@
 
   <!-- Une ombre pour OSG -->
   <model>
-    <name>shadowOSG</name>
     <path>Aircraft/A-26-Invader/Models/shadow.xml</path>
+    <offsets>
+      <x-m> -0.108 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -2.300 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Cranking -->
+  <!-- Left -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Effects/cranking/all-crankingL.xml</path>
+    <offsets> 
+      <x-m> -4.530 </x-m>
+      <y-m> -2.889 </y-m>
+      <z-m> -0.733 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Right -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Effects/cranking/all-crankingR.xml</path>
+    <offsets> 
+      <x-m> -4.530 </x-m>
+      <y-m>  2.889 </y-m>
+      <z-m> -0.733 </z-m>
+    </offsets>
   </model>
 
   <!-- Intérieur -->
   <model>
     <path>Aircraft/A-26-Invader/Models/Interior/interior.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </offsets>
   </model>
 
   <!-- Effects de tir -->

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>HydraulicHandPump.ac</path>
+
+  <animation>
+    <object-name>HydraPumpLever</object-name>
+  </animation>
+
+</PropertyList>
+

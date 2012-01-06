@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>mixtures.ac</path>
+
+  <animation>
+    <object-name>Mixture.Lever.L</object-name>
+    <object-name>Mixture.SphereL</object-name>
+    <object-name>Mixture.Lever.R</object-name>
+    <object-name>Mixture.SphereR</object-name>
+  </animation>
+
+  <!-- Left Mixture -->
+  <animation>
+    <name>MixtureLeverLeft</name>
+    <object-name>Mixture.Lever.L</object-name>
+    <object-name>Mixture.SphereL</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>MixtureLeverLeft</object-name>
+    <property>controls/engines/engine[0]/mixture</property>
+    <factor>  65 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>MixtureLeverLeft</object-name> 
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/mixture</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>MixtureLeverLeft</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/mixture</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <!-- Right Mixture  -->    
+  <animation>
+    <name>MixtureLeverRight</name>
+    <object-name>Mixture.Lever.R</object-name>
+    <object-name>Mixture.SphereR</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>MixtureLeverRight</object-name>
+    <property>controls/engines/engine[1]/mixture</property>
+    <factor>  65 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>MixtureLeverRight</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[1]/mixture</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>
+ 
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>MixtureLeverRight</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[1]/mixture</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+</PropertyList>
+

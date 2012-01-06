@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>propellers.ac</path>
+
+  <animation>
+    <object-name>Propeller.Lever.L</object-name>
+    <object-name>Propeller.Sphere.L</object-name>
+    <object-name>Propeller.Lever.R</object-name>
+    <object-name>Propeller.Sphere.R</object-name>
+  </animation>
+
+  <!-- Left Propeller -->
+  <animation>
+    <name>PropellerLeverLeft</name>
+    <object-name>Propeller.Lever.L</object-name>
+    <object-name>Propeller.Sphere.L</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>PropellerLeverLeft</object-name>
+    <property>controls/engines/engine[0]/propeller-pitch</property>
+    <factor>  65 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>PropellerLeverLeft</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/propeller-pitch</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>PropellerLeverLeft</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/propeller-pitch</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <!-- Right Propeller -->
+  <animation>
+    <name>PropellerLeverRight</name>
+    <object-name>Propeller.Lever.R</object-name>
+    <object-name>Propeller.Sphere.R</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>PropellerLeverRight</object-name>
+    <property>controls/engines/engine[1]/propeller-pitch</property>
+    <factor>  65 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>PropellerLeverRight</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[1]/propeller-pitch</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>PropellerLeverRight</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[1]/propeller-pitch</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+</PropertyList>
+

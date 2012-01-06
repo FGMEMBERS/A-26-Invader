@@ -8,5 +8,14 @@
     <author>BARANGER Emmanuel</author>
   </sim>
 
+
+ <nasal>
+   <SCR_522C>
+      <file>Aircraft/Instruments-3d/SCR-522C/Nasal/SCR-522C.nas</file>
+   </SCR_522C>
+</nasal>  
+
+
+
 </PropertyList>
 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>carbair.ac</path>
+
+  <animation>
+    <object-name>CarbAirLeverL</object-name>
+    <object-name>CarbAirSphereL</object-name>
+    <object-name>CarbAirLeverR</object-name>
+    <object-name>CarbAirSphereR</object-name>
+  </animation>
+
+  <!-- Left Mixture -->
+  <animation>
+    <name>CarbAirLeverLeft</name>
+    <object-name>CarbAirLeverL</object-name>
+    <object-name>CarbAirSphereL</object-name>
+  </animation>
+
+  <!-- Right Mixture  -->    
+  <animation>
+    <name>CarbAirLeverRight</name>
+    <object-name>CarbAirLeverR</object-name>
+    <object-name>CarbAirSphereR</object-name>
+  </animation>
+
+</PropertyList>
+

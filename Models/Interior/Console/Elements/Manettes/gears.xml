@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>gears.ac</path>
+
+  <animation>
+    <object-name>GearLever</object-name>
+  </animation>
+
+  <!-- Gear  Lever -->
+  <animation>
+    <type>rotate</type>
+    <object-name>GearLever</object-name>
+    <property>controls/gear/gear-down</property>
+    <factor> -40 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>GearLever</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/gear/gear-down</property>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>
+

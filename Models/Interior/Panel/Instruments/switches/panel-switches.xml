@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <!-- Switches -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.470 </y-m>
+      <z-m> 0.142 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.570 </y-m>
+      <z-m> 0.125 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.548 </y-m>
+      <z-m> 0.125 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.485 </y-m>
+      <z-m> 0.108 </z-m>
+    </offsets>
+  </model>
+
+ <!-- Starter and Magnetos -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/StarterAndMagnetos.xml</path>
+    <offsets>
+      <x-m> -0.0781 </x-m>
+      <y-m> -0.613 </y-m>
+      <z-m> 0.148 </z-m>
+    </offsets>
+  </model>
+
+ <!-- Lights -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.659 </y-m>
+      <z-m> 0.076 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.639</y-m>
+      <z-m> 0.075 </z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.624 </y-m>
+      <z-m> 0.076 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.606 </y-m>
+      <z-m> 0.076 </z-m>
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.589 </y-m>
+      <z-m> 0.076 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.573 </y-m>
+      <z-m> 0.076 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.555 </y-m>
+      <z-m> 0.076 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.539 </y-m>
+      <z-m> 0.076 </z-m>
+    </offsets>
+  </model>
+
+
+
+
+
+  <!-- InferiorSwitches  -->
+<model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.659 </y-m>
+      <z-m> -0.022 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.639</y-m>
+      <z-m> -0.022 </z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.619 </y-m>
+      <z-m> -0.022 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.599 </y-m>
+      <z-m> -0.022 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.580 </y-m>
+      <z-m> -0.022 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.561 </y-m>
+      <z-m> -0.022 </z-m>
+    </offsets>
+  </model>
+
+
+
+  <!-- Boutons -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/bouton.xml</path>
+    <offsets>
+      <x-m> -0.077 </x-m>
+      <y-m> -0.538 </y-m>
+      <z-m> 0.242 </z-m>
+    </offsets>
+  </model>
+
+ <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/bouton.xml</path>
+    <offsets>
+      <x-m> -0.077 </x-m>
+      <y-m> -0.506 </y-m>
+      <z-m> 0.242 </z-m>
+    </offsets>   
+  </model>
+
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/bouton.xml</path>
+    <offsets>
+      <x-m> -0.077 </x-m>
+      <y-m> -0.474 </y-m>
+      <z-m> 0.242 </z-m>
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/bouton.xml</path>
+    <offsets>
+      <x-m> -0.077 </x-m>
+      <y-m> -0.493 </y-m>
+      <z-m> 0.036 </z-m>
+      <heading-deg> -180 </heading-deg>
+      <pitch-deg> -180 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Indicators  -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/indicator.xml</path>
+    <offsets>
+      <x-m> -0.071 </x-m>
+      <y-m> -0.470 </y-m>
+      <z-m> 0.172 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/indicator.xml</path>
+    <offsets>
+      <x-m> -0.077 </x-m>
+      <y-m> -0.505 </y-m>
+      <z-m> 0.280 </z-m>
+    </offsets>   
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/indicator.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.619 </y-m>
+      <z-m> -0.046 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/indicator.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.480 </y-m>
+      <z-m> -0.046 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Red_Switches  -->
+<model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.551 </y-m>
+      <z-m>  0.192 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.536</y-m>
+      <z-m>  0.192 </z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.521 </y-m>
+      <z-m>  0.192 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.506 </y-m>
+      <z-m>  0.192 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.491 </y-m>
+      <z-m>  0.192 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_switch.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.476 </y-m>
+      <z-m>  0.192 </z-m>
+    </offsets>
+  </model>
+
+
+  <!-- Arming Selector  -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/ArmingSelector.xml</path>
+    <offsets>
+      <x-m> -0.070 </x-m>
+      <y-m> -0.505 </y-m>
+      <z-m> 0.130 </z-m>
+    </offsets>
+  </model>
+
+
+  <!-- Red_Pilots Superiors -->
+<model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_pilot.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.658 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_pilot.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.638</y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_pilot.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.622 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_pilot.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.601 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_pilot.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.582 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_pilot.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.561 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_pilot.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.540 </y-m>
+      <z-m>  0.037 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Red_Pilots Inferiors -->
+<model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_pilot.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.658 </y-m>
+      <z-m>  0.020 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_pilot.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.638</y-m>
+      <z-m>  0.020 </z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_pilot.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.622 </y-m>
+      <z-m>  0.020 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_pilot.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.601 </y-m>
+      <z-m>  0.020 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_pilot.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.582 </y-m>
+      <z-m>  0.020 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_pilot.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.561 </y-m>
+      <z-m>  0.020 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/red_pilot.xml</path>
+    <offsets>
+      <x-m> -0.078 </x-m>
+      <y-m> -0.540 </y-m>
+      <z-m>  0.020 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

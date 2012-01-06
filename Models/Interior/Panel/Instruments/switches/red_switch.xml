@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>red_switch.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>RedSwitch</object-name>
+    <object-name>RedSwitch_base</object-name>
+    <emission>
+      <red>   0.40 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+</PropertyList>

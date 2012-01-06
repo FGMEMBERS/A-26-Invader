@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>fuel.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>selector</object-name>
+
+    <object-name>cw</object-name>
+    <object-name>ccw</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>cw</object-name>
+    <object-name>ccw</object-name>
+    <visible>false</visible>
+  </animation>
+
+</PropertyList>
+

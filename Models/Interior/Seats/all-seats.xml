@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <!-- Pilot -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -4.021 </x-m>
+      <y-m> -0.445 </y-m>
+      <z-m> -0.465 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

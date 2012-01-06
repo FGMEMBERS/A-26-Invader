@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>Radio_Filter_Unit.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fond</object-name>
+    <object-name>bouton2</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+</PropertyList>
+

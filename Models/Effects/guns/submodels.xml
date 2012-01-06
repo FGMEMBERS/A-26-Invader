@@ -2,355 +2,600 @@
 
 <PropertyList>
 
-  <submodel>
-    <name>left-exterior</name>
-    <model>Aircraft/A-26-Invader/Models/Effects/guns/apibullet-tracer.xml</model>
-    <trigger>controls/armament/trigger</trigger>
-    <speed>2460.0</speed>
-    <repeat>true</repeat>
-    <delay>0.6</delay>
-    <count>-1</count>
+	<cannon>
+		<model>Models/Geometry/tracer.xml</model>
+		<speed>2755.9</speed>
+		<cd>0.193</cd>
+		<weight>0.286600941</weight>
+		<eda>0.00338158219</eda>
+		<!--<pitch-offset>0</pitch-offset>-->
+		<fuse-range>0</fuse-range>
+		<life>40</life>
+		<trigger>controls/armament/trigger</trigger>
+		<expiry>true</expiry>
+		<repeat>true</repeat>
+		<delay>0.41</delay>
+		<count>33</count>
+		<wind>false</wind>
+		<collision>true</collision>
+		<impact>true</impact>
+		<impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+		<submodel-path>Aircraft/A-26-Invader/Models/Effects/guns/bullet-submodel.xml</submodel-path>
+		<impact-reports>sim/ai/aircraft/collision/cannon</impact-reports>
+		<pitch-offset>0.1</pitch-offset>
+	</cannon>
+
+	<submodel>
+		<name>exterior left gun</name>
+		<model alias="../../cannon/model"/>
+		<trigger alias="../../cannon/trigger"/>
+		<speed alias="../../cannon/speed"/>
+		<cd alias="../../cannon/cd"/>
+		<eda alias="../../cannon/eda"/>
+		<fuse-range alias="../../cannon/fuse-range"/>
+		<weight alias="../../cannon/weight"/>
+		<life alias="../../cannon/life"/>
+		<repeat alias="../../cannon/repeat"/>
+		<delay alias="../../cannon/delay"/>
+		<count alias="../../cannon/count"/>
+		<wind alias="../../cannon/wind"/>
+		<expiry alias="../../cannon/expiry"/>
+		<collision alias="../../cannon/collision"/>
+		<impact alias="../../cannon/impact"/>
+		<submodel-path alias="../../cannon/submodel-path"/>
     <x-offset> 11.03 </x-offset> <!-- -3.361 m = 11.03 ft -->
     <y-offset> 18.80 </y-offset> <!-- -5.729 m = 18.80 ft -->
-    <z-offset>  0,26 </z-offset> <!-- -0.078 m = -0.26 ft -->
-    <yaw-offset> 0.0 </yaw-offset>
-    <pitch-offset> 0.1 </pitch-offset>
-    <life>4.0</life>
-    <wind>false</wind>
-    <weight>0.07495</weight>
-    <cd>0.193</cd>
-    <eda>0.00571198</eda> 
-    <collision>true</collision>
-    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
-    <impact>true</impact>
-    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
-    <submodel-path>Aircraft/A-26-Invader/Models/Effects/guns/bullet-submodel.xml</submodel-path>
-  </submodel>
+    <z-offset>  0.26 </z-offset> <!-- -0.078 m = -0.26 ft -->
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset alias="../../cannon/pitch-offset"/>
+	</submodel>
 
-  <submodel>
-    <name>left-center</name>
-    <model>Aircraft/A-26-Invader/Models/Effects/guns/apibullet-tracer.xml</model>
-    <trigger>controls/armament/trigger</trigger>
-    <speed>2460.0</speed>
-    <repeat>true</repeat>
-    <delay>0.6</delay>
-    <count>-1</count>
+	<submodel>
+		<name>exterior left smoke</name>
+		<model>Aircraft/A-26-Invader/Models/Effects/guns/smoke.xml</model>
+		<trigger alias="../../cannon/trigger"/>
+		<speed>200</speed>
+		<repeat>true</repeat>
+		<delay>0.08</delay>
+		<count>160</count>
+    <x-offset> 11.03 </x-offset> <!-- -3.361 m = 11.03 ft -->
+    <y-offset> 18.80 </y-offset> <!-- -5.729 m = 18.80 ft -->
+    <z-offset>  0.26 </z-offset> <!-- -0.078 m = -0.26 ft -->
+		<yaw-offset>-60</yaw-offset>
+		<pitch-offset>-60</pitch-offset>
+		<eda>10</eda>
+		<wind>true</wind>
+		<buoyancy>33</buoyancy>
+		<life>5</life>
+	</submodel>
+
+	<submodel>
+		<name>left-center gun</name>
+		<model alias="../../cannon/model"/>
+		<trigger alias="../../cannon/trigger"/>
+		<speed alias="../../cannon/speed"/>
+		<cd alias="../../cannon/cd"/>
+		<eda alias="../../cannon/eda"/>
+		<fuse-range alias="../../cannon/fuse-range"/>
+		<weight alias="../../cannon/weight"/>
+		<life alias="../../cannon/life"/>
+		<repeat alias="../../cannon/repeat"/>
+		<delay alias="../../cannon/delay"/>
+		<count alias="../../cannon/count"/>
+		<wind alias="../../cannon/wind"/>
+		<expiry alias="../../cannon/expiry"/>
+		<collision alias="../../cannon/collision"/>
+		<impact alias="../../cannon/impact"/>
+		<submodel-path alias="../../cannon/submodel-path"/>
     <x-offset> 11.28 </x-offset> <!-- -3.437 m 11.28 ft -->
-    <y-offset> 18,28 </y-offset> <!-- -5.571 m 18.28 ft -->
+    <y-offset> 18.28 </y-offset> <!-- -5.571 m 18.28 ft -->
     <z-offset> -0.29 </z-offset> <!-- -0.088 m -0.29 ft -->
-    <yaw-offset> 0.0 </yaw-offset>
-    <pitch-offset> 0.1 </pitch-offset>
-    <life>4.0</life>
-    <wind>false</wind>
-    <weight>0.07495</weight>
-    <cd>0.193</cd>
-    <eda>0.00571198</eda> 
-    <collision>true</collision>
-    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
-    <impact>true</impact>
-    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
-    <submodel-path>Aircraft/A-26-Invader/Models/Effects/guns/bullet-submodel.xml</submodel-path>
-  </submodel>
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset alias="../../cannon/pitch-offset"/>
+	</submodel>
 
-  <submodel>
-    <name>left-right</name>
-    <model>Aircraft/A-26-Invader/Models/Effects/guns/apibullet-tracer.xml</model>
-    <trigger>controls/armament/trigger</trigger>
-    <speed>2460.0</speed>
-    <repeat>true</repeat>
-    <delay>0.6</delay>
-    <count>-1</count>
+	<submodel>
+		<name>left-center smoke</name>
+		<model>Aircraft/A-26-Invader/Models/Effects/guns/smoke.xml</model>
+		<trigger alias="../../cannon/trigger"/>
+		<speed>200</speed>
+		<repeat>true</repeat>
+		<delay>0.08</delay>
+		<count>160</count>
+    <x-offset> 11.28 </x-offset> <!-- -3.437 m 11.28 ft -->
+    <y-offset> 18.28 </y-offset> <!-- -5.571 m 18.28 ft -->
+    <z-offset> -0.29 </z-offset> <!-- -0.088 m -0.29 ft -->
+		<yaw-offset>-60</yaw-offset>
+		<pitch-offset>-60</pitch-offset>
+		<eda>10</eda>
+		<wind>true</wind>
+		<buoyancy>33</buoyancy>
+		<life>5</life>
+	</submodel>
+
+	<submodel>
+		<name>left-right gun</name>
+		<model alias="../../cannon/model"/>
+		<trigger alias="../../cannon/trigger"/>
+		<speed alias="../../cannon/speed"/>
+		<cd alias="../../cannon/cd"/>
+		<eda alias="../../cannon/eda"/>
+		<fuse-range alias="../../cannon/fuse-range"/>
+		<weight alias="../../cannon/weight"/>
+		<life alias="../../cannon/life"/>
+		<repeat alias="../../cannon/repeat"/>
+		<delay alias="../../cannon/delay"/>
+		<count alias="../../cannon/count"/>
+		<wind alias="../../cannon/wind"/>
+		<expiry alias="../../cannon/expiry"/>
+		<collision alias="../../cannon/collision"/>
+		<impact alias="../../cannon/impact"/>
+		<submodel-path alias="../../cannon/submodel-path"/>
     <x-offset> 11.03 </x-offset> <!-- -3.361 m = 11.03 ft -->
     <y-offset> 17.81 </y-offset> <!-- -5.428 m = 17.81 ft -->
     <z-offset> -0.31 </z-offset> <!-- -0.095 m = -0.31 ft -->
-    <yaw-offset> 0.0 </yaw-offset>
-    <pitch-offset> 0.1 </pitch-offset>
-    <life>4.0</life>
-    <wind>false</wind>
-    <weight>0.07495</weight>
-    <cd>0.193</cd>
-    <eda>0.00571198</eda> 
-    <collision>true</collision>
-    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
-    <impact>true</impact>
-    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
-    <submodel-path>Aircraft/A-26-Invader/Models/Effects/guns/bullet-submodel.xml</submodel-path>
-  </submodel>
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset alias="../../cannon/pitch-offset"/>
+	</submodel>
 
-  <submodel>
-    <name>center-left-up-up</name>
-    <model>Aircraft/A-26-Invader/Models/Effects/guns/apibullet-tracer.xml</model>
-    <trigger>controls/armament/trigger</trigger>
-    <speed>2460.0</speed>
-    <repeat>true</repeat>
-    <delay>0.6</delay>
-    <count>-1</count>
+	<submodel>
+		<name>left-right smoke</name>
+		<model>Aircraft/A-26-Invader/Models/Effects/guns/smoke.xml</model>
+		<trigger alias="../../cannon/trigger"/>
+		<speed>200</speed>
+		<repeat>true</repeat>
+		<delay>0.08</delay>
+		<count>160</count>
+    <x-offset> 11.03 </x-offset> <!-- -3.361 m = 11.03 ft -->
+    <y-offset> 17.81 </y-offset> <!-- -5.428 m = 17.81 ft -->
+    <z-offset> -0.31 </z-offset> <!-- -0.095 m = -0.31 ft -->
+		<yaw-offset>-60</yaw-offset>
+		<pitch-offset>-60</pitch-offset>
+		<eda>10</eda>
+		<wind>true</wind>
+		<buoyancy>33</buoyancy>
+		<life>5</life>
+	</submodel>
+
+	<submodel>
+		<name>center-left-up gun</name>
+		<model alias="../../cannon/model"/>
+		<trigger alias="../../cannon/trigger"/>
+		<speed alias="../../cannon/speed"/>
+		<cd alias="../../cannon/cd"/>
+		<eda alias="../../cannon/eda"/>
+		<fuse-range alias="../../cannon/fuse-range"/>
+		<weight alias="../../cannon/weight"/>
+		<life alias="../../cannon/life"/>
+		<repeat alias="../../cannon/repeat"/>
+		<delay alias="../../cannon/delay"/>
+		<count alias="../../cannon/count"/>
+		<wind alias="../../cannon/wind"/>
+		<expiry alias="../../cannon/expiry"/>
+		<collision alias="../../cannon/collision"/>
+		<impact alias="../../cannon/impact"/>
+		<submodel-path alias="../../cannon/submodel-path"/>
     <x-offset> 25.00 </x-offset> <!-- -7.620 m = 25.00 ft -->
     <y-offset>  0.58 </y-offset> <!-- -0.176 m =  0.58 ft -->
-    <z-offset> -1,20 </z-offset> <!-- -0.367 m = -1.20 ft -->
-    <yaw-offset> 0.0 </yaw-offset>
-    <pitch-offset> 0.1 </pitch-offset>
-    <life>4.0</life>
-    <wind>false</wind>
-    <weight>0.07495</weight>
-    <cd>0.193</cd>
-    <eda>0.00571198</eda> 
-    <collision>true</collision>
-    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
-    <impact>true</impact>
-    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
-    <submodel-path>Aircraft/A-26-Invader/Models/Effects/guns/bullet-submodel.xml</submodel-path>
-  </submodel>
+    <z-offset> -1.20 </z-offset> <!-- -0.367 m = -1.20 ft -->
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset alias="../../cannon/pitch-offset"/>
+	</submodel>
 
-  <submodel>
-    <name>center-left-up-down</name>
-    <model>Aircraft/A-26-Invader/Models/Effects/guns/apibullet-tracer.xml</model>
-    <trigger>controls/armament/trigger</trigger>
-    <speed>2460.0</speed>
-    <repeat>true</repeat>
-    <delay>0.6</delay>
-    <count>-1</count>
+	<submodel>
+		<name>center-left-up smoke</name>
+		<model>Aircraft/A-26-Invader/Models/Effects/guns/smoke.xml</model>
+		<trigger alias="../../cannon/trigger"/>
+		<speed>200</speed>
+		<repeat>true</repeat>
+		<delay>0.08</delay>
+		<count>160</count>
+    <x-offset> 25.00 </x-offset> <!-- -7.620 m = 25.00 ft -->
+    <y-offset>  0.58 </y-offset> <!-- -0.176 m =  0.58 ft -->
+    <z-offset> -1.20 </z-offset> <!-- -0.367 m = -1.20 ft -->
+		<yaw-offset>-60</yaw-offset>
+		<pitch-offset>-60</pitch-offset>
+		<eda>10</eda>
+		<wind>true</wind>
+		<buoyancy>33</buoyancy>
+		<life>5</life>
+	</submodel>
+
+	<submodel>
+		<name>center-left-up gun</name>
+		<model alias="../../cannon/model"/>
+		<trigger alias="../../cannon/trigger"/>
+		<speed alias="../../cannon/speed"/>
+		<cd alias="../../cannon/cd"/>
+		<eda alias="../../cannon/eda"/>
+		<fuse-range alias="../../cannon/fuse-range"/>
+		<weight alias="../../cannon/weight"/>
+		<life alias="../../cannon/life"/>
+		<repeat alias="../../cannon/repeat"/>
+		<delay alias="../../cannon/delay"/>
+		<count alias="../../cannon/count"/>
+		<wind alias="../../cannon/wind"/>
+		<expiry alias="../../cannon/expiry"/>
+		<collision alias="../../cannon/collision"/>
+		<impact alias="../../cannon/impact"/>
+		<submodel-path alias="../../cannon/submodel-path"/>
     <x-offset> 25.21 </x-offset> <!-- -7.683 m = 25.21 ft -->
     <y-offset>  0.58 </y-offset> <!-- -0.176 m =  0.58 ft -->
     <z-offset> -1.70 </z-offset> <!-- -0.518 m = -1.70 ft -->
-    <yaw-offset> 0.0 </yaw-offset>
-    <pitch-offset> 0.1 </pitch-offset>
-    <life>4.0</life>
-    <wind>false</wind>
-    <weight>0.07495</weight>
-    <cd>0.193</cd>
-    <eda>0.00571198</eda> 
-    <collision>true</collision>
-    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
-    <impact>true</impact>
-    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
-    <submodel-path>Aircraft/A-26-Invader/Models/Effects/guns/bullet-submodel.xml</submodel-path>
-  </submodel>
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset alias="../../cannon/pitch-offset"/>
+	</submodel>
 
-  <submodel>
-    <name>center-left-down-up</name>
-    <model>Aircraft/A-26-Invader/Models/Effects/guns/apibullet-tracer.xml</model>
-    <trigger>controls/armament/trigger</trigger>
-    <speed>2460.0</speed>
-    <repeat>true</repeat>
-    <delay>0.6</delay>
-    <count>-1</count>
+	<submodel>
+		<name>center-left-up smoke</name>
+		<model>Aircraft/A-26-Invader/Models/Effects/guns/smoke.xml</model>
+		<trigger alias="../../cannon/trigger"/>
+		<speed>200</speed>
+		<repeat>true</repeat>
+		<delay>0.08</delay>
+		<count>160</count>
+    <x-offset> 25.21 </x-offset> <!-- -7.683 m = 25.21 ft -->
+    <y-offset>  0.58 </y-offset> <!-- -0.176 m =  0.58 ft -->
+    <z-offset> -1.70 </z-offset> <!-- -0.518 m = -1.70 ft -->
+		<yaw-offset>-60</yaw-offset>
+		<pitch-offset>-60</pitch-offset>
+		<eda>10</eda>
+		<wind>true</wind>
+		<buoyancy>33</buoyancy>
+		<life>5</life>
+	</submodel>
+
+	<submodel>
+		<name>center-left-down gun</name>
+		<model alias="../../cannon/model"/>
+		<trigger alias="../../cannon/trigger"/>
+		<speed alias="../../cannon/speed"/>
+		<cd alias="../../cannon/cd"/>
+		<eda alias="../../cannon/eda"/>
+		<fuse-range alias="../../cannon/fuse-range"/>
+		<weight alias="../../cannon/weight"/>
+		<life alias="../../cannon/life"/>
+		<repeat alias="../../cannon/repeat"/>
+		<delay alias="../../cannon/delay"/>
+		<count alias="../../cannon/count"/>
+		<wind alias="../../cannon/wind"/>
+		<expiry alias="../../cannon/expiry"/>
+		<collision alias="../../cannon/collision"/>
+		<impact alias="../../cannon/impact"/>
+		<submodel-path alias="../../cannon/submodel-path"/>
     <x-offset> 25.49 </x-offset> <!-- -7.770 m = 25.49 ft -->
     <y-offset>  0.58 </y-offset> <!-- -0.176 m =  0.58 ft -->
     <z-offset> -2.19 </z-offset> <!-- -0.667 m = -2.19 ft -->
-    <yaw-offset> 0.0 </yaw-offset>
-    <pitch-offset> 0.1 </pitch-offset>
-    <life>4.0</life>
-    <wind>false</wind>
-    <weight>0.07495</weight>
-    <cd>0.193</cd>
-    <eda>0.00571198</eda> 
-    <collision>true</collision>
-    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
-    <impact>true</impact>
-    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
-    <submodel-path>Aircraft/A-26-Invader/Models/Effects/guns/bullet-submodel.xml</submodel-path>
-  </submodel>
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset alias="../../cannon/pitch-offset"/>
+	</submodel>
 
-  <submodel>
-    <name>center-left-down-down</name>
-    <model>Aircraft/A-26-Invader/Models/Effects/guns/apibullet-tracer.xml</model>
-    <trigger>controls/armament/trigger</trigger>
-    <speed>2460.0</speed>
-    <repeat>true</repeat>
-    <delay>0.6</delay>
-    <count>-1</count>
+	<submodel>
+		<name>center-left-down smoke</name>
+		<model>Aircraft/A-26-Invader/Models/Effects/guns/smoke.xml</model>
+		<trigger alias="../../cannon/trigger"/>
+		<speed>200</speed>
+		<repeat>true</repeat>
+		<delay>0.08</delay>
+		<count>160</count>
+    <x-offset> 25.49 </x-offset> <!-- -7.770 m = 25.49 ft -->
+    <y-offset>  0.58 </y-offset> <!-- -0.176 m =  0.58 ft -->
+    <z-offset> -2.19 </z-offset> <!-- -0.667 m = -2.19 ft -->
+		<yaw-offset>-60</yaw-offset>
+		<pitch-offset>-60</pitch-offset>
+		<eda>10</eda>
+		<wind>true</wind>
+		<buoyancy>33</buoyancy>
+		<life>5</life>
+	</submodel>
+
+	<submodel>
+		<name>center-left-down gun</name>
+		<model alias="../../cannon/model"/>
+		<trigger alias="../../cannon/trigger"/>
+		<speed alias="../../cannon/speed"/>
+		<cd alias="../../cannon/cd"/>
+		<eda alias="../../cannon/eda"/>
+		<fuse-range alias="../../cannon/fuse-range"/>
+		<weight alias="../../cannon/weight"/>
+		<life alias="../../cannon/life"/>
+		<repeat alias="../../cannon/repeat"/>
+		<delay alias="../../cannon/delay"/>
+		<count alias="../../cannon/count"/>
+		<wind alias="../../cannon/wind"/>
+		<expiry alias="../../cannon/expiry"/>
+		<collision alias="../../cannon/collision"/>
+		<impact alias="../../cannon/impact"/>
+		<submodel-path alias="../../cannon/submodel-path"/>
     <x-offset> 25.69 </x-offset> <!-- -7.830 m = 25.69 ft -->
     <y-offset>  0.58 </y-offset> <!-- -0.176 m =  0.58 ft -->
     <z-offset> -2.78 </z-offset> <!-- -0.847 m = -2.78 ft -->
-    <yaw-offset> 0.0 </yaw-offset>
-    <pitch-offset> 0.1 </pitch-offset>
-    <life>4.0</life>
-    <wind>false</wind>
-    <weight>0.07495</weight>
-    <cd>0.193</cd>
-    <eda>0.00571198</eda> 
-    <collision>true</collision>
-    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
-    <impact>true</impact>
-    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
-    <submodel-path>Aircraft/A-26-Invader/Models/Effects/guns/bullet-submodel.xml</submodel-path>
-  </submodel>
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset alias="../../cannon/pitch-offset"/>
+	</submodel>
 
-  <submodel>
-    <name>center-right-down-down</name>
-    <model>Aircraft/A-26-Invader/Models/Effects/guns/apibullet-tracer.xml</model>
-    <trigger>controls/armament/trigger</trigger>
-    <speed>2460.0</speed>
-    <repeat>true</repeat>
-    <delay>0.6</delay>
-    <count>-1</count>
+	<submodel>
+		<name>center-left-down smoke</name>
+		<model>Aircraft/A-26-Invader/Models/Effects/guns/smoke.xml</model>
+		<trigger alias="../../cannon/trigger"/>
+		<speed>200</speed>
+		<repeat>true</repeat>
+		<delay>0.08</delay>
+		<count>160</count>
+    <x-offset> 25.69 </x-offset> <!-- -7.830 m = 25.69 ft -->
+    <y-offset>  0.58 </y-offset> <!-- -0.176 m =  0.58 ft -->
+    <z-offset> -2.78 </z-offset> <!-- -0.847 m = -2.78 ft -->
+		<yaw-offset>-60</yaw-offset>
+		<pitch-offset>-60</pitch-offset>
+		<eda>10</eda>
+		<wind>true</wind>
+		<buoyancy>33</buoyancy>
+		<life>5</life>
+	</submodel>
+
+	<submodel>
+		<name>center-right-down-down gun</name>
+		<model alias="../../cannon/model"/>
+		<trigger alias="../../cannon/trigger"/>
+		<speed alias="../../cannon/speed"/>
+		<cd alias="../../cannon/cd"/>
+		<eda alias="../../cannon/eda"/>
+		<fuse-range alias="../../cannon/fuse-range"/>
+		<weight alias="../../cannon/weight"/>
+		<life alias="../../cannon/life"/>
+		<repeat alias="../../cannon/repeat"/>
+		<delay alias="../../cannon/delay"/>
+		<count alias="../../cannon/count"/>
+		<wind alias="../../cannon/wind"/>
+		<expiry alias="../../cannon/expiry"/>
+		<collision alias="../../cannon/collision"/>
+		<impact alias="../../cannon/impact"/>
+		<submodel-path alias="../../cannon/submodel-path"/>
     <x-offset> 25.69 </x-offset> <!-- -7.830 m = 25.69 ft -->
     <y-offset> -0.58 </y-offset> <!--  0.176 m = -0.58 ft -->
     <z-offset> -2.78 </z-offset> <!-- -0.847 m = -2.78 ft -->
-    <yaw-offset> 0.0 </yaw-offset>
-    <pitch-offset> 0.1 </pitch-offset>
-    <life>4.0</life>
-    <wind>false</wind>
-    <weight>0.07495</weight>
-    <cd>0.193</cd>
-    <eda>0.00571198</eda> 
-    <collision>true</collision>
-    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
-    <impact>true</impact>
-    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
-    <submodel-path>Aircraft/A-26-Invader/Models/Effects/guns/bullet-submodel.xml</submodel-path>
-  </submodel>
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset alias="../../cannon/pitch-offset"/>
+	</submodel>
 
-  <submodel>
-    <name>center-right-down-up</name>
-    <model>Aircraft/A-26-Invader/Models/Effects/guns/apibullet-tracer.xml</model>
-    <trigger>controls/armament/trigger</trigger>
-    <speed>2460.0</speed>
-    <repeat>true</repeat>
-    <delay>0.6</delay>
-    <count>-1</count>
+	<submodel>
+		<name>center-right-down-down smoke</name>
+		<model>Aircraft/A-26-Invader/Models/Effects/guns/smoke.xml</model>
+		<trigger alias="../../cannon/trigger"/>
+		<speed>200</speed>
+		<repeat>true</repeat>
+		<delay>0.08</delay>
+		<count>160</count>
+    <x-offset> 25.69 </x-offset> <!-- -7.830 m = 25.69 ft -->
+    <y-offset> -0.58 </y-offset> <!--  0.176 m = -0.58 ft -->
+    <z-offset> -2.78 </z-offset> <!-- -0.847 m = -2.78 ft -->
+		<yaw-offset>-60</yaw-offset>
+		<pitch-offset>-60</pitch-offset>
+		<eda>10</eda>
+		<wind>true</wind>
+		<buoyancy>33</buoyancy>
+		<life>5</life>
+	</submodel>
+
+	<submodel>
+		<name>center-right-down-up gun</name>
+		<model alias="../../cannon/model"/>
+		<trigger alias="../../cannon/trigger"/>
+		<speed alias="../../cannon/speed"/>
+		<cd alias="../../cannon/cd"/>
+		<eda alias="../../cannon/eda"/>
+		<fuse-range alias="../../cannon/fuse-range"/>
+		<weight alias="../../cannon/weight"/>
+		<life alias="../../cannon/life"/>
+		<repeat alias="../../cannon/repeat"/>
+		<delay alias="../../cannon/delay"/>
+		<count alias="../../cannon/count"/>
+		<wind alias="../../cannon/wind"/>
+		<expiry alias="../../cannon/expiry"/>
+		<collision alias="../../cannon/collision"/>
+		<impact alias="../../cannon/impact"/>
+		<submodel-path alias="../../cannon/submodel-path"/>
     <x-offset> 25.49 </x-offset> <!-- -7.770 m = 25.49 ft -->
     <y-offset> -0.58 </y-offset> <!--  0.176 m = -0.58 ft -->
     <z-offset> -2.19 </z-offset> <!-- -0.667 m = -2.19 ft -->
-    <yaw-offset> 0.0 </yaw-offset>
-    <pitch-offset> 0.1 </pitch-offset>
-    <life>4.0</life>
-    <wind>false</wind>
-    <weight>0.07495</weight>
-    <cd>0.193</cd>
-    <eda>0.00571198</eda> 
-    <collision>true</collision>
-    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
-    <impact>true</impact>
-    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
-    <submodel-path>Aircraft/A-26-Invader/Models/Effects/guns/bullet-submodel.xml</submodel-path>
-  </submodel>
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset alias="../../cannon/pitch-offset"/>
+	</submodel>
 
-  <submodel>
-    <name>center-right-up-down</name>
-    <model>Aircraft/A-26-Invader/Models/Effects/guns/apibullet-tracer.xml</model>
-    <trigger>controls/armament/trigger</trigger>
-    <speed>2460.0</speed>
-    <repeat>true</repeat>
-    <delay>0.6</delay>
-    <count>-1</count>
+	<submodel>
+		<name>center-right-down-up smoke</name>
+		<model>Aircraft/A-26-Invader/Models/Effects/guns/smoke.xml</model>
+		<trigger alias="../../cannon/trigger"/>
+		<speed>200</speed>
+		<repeat>true</repeat>
+		<delay>0.08</delay>
+		<count>160</count>
+    <x-offset> 25.49 </x-offset> <!-- -7.770 m = 25.49 ft -->
+    <y-offset> -0.58 </y-offset> <!--  0.176 m = -0.58 ft -->
+    <z-offset> -2.19 </z-offset> <!-- -0.667 m = -2.19 ft -->
+		<yaw-offset>-60</yaw-offset>
+		<pitch-offset>-60</pitch-offset>
+		<eda>10</eda>
+		<wind>true</wind>
+		<buoyancy>33</buoyancy>
+		<life>5</life>
+	</submodel>
+
+	<submodel>
+		<name>center-right-up-down gun</name>
+		<model alias="../../cannon/model"/>
+		<trigger alias="../../cannon/trigger"/>
+		<speed alias="../../cannon/speed"/>
+		<cd alias="../../cannon/cd"/>
+		<eda alias="../../cannon/eda"/>
+		<fuse-range alias="../../cannon/fuse-range"/>
+		<weight alias="../../cannon/weight"/>
+		<life alias="../../cannon/life"/>
+		<repeat alias="../../cannon/repeat"/>
+		<delay alias="../../cannon/delay"/>
+		<count alias="../../cannon/count"/>
+		<wind alias="../../cannon/wind"/>
+		<expiry alias="../../cannon/expiry"/>
+		<collision alias="../../cannon/collision"/>
+		<impact alias="../../cannon/impact"/>
+		<submodel-path alias="../../cannon/submodel-path"/>
     <x-offset> 25.21 </x-offset> <!-- -7.683 m = 25.21 ft -->
     <y-offset> -0.58 </y-offset> <!--  0.176 m = -0.58 ft -->
     <z-offset> -1.70 </z-offset> <!-- -0.518 m = -1.70 ft -->
-    <yaw-offset> 0.0 </yaw-offset>
-    <pitch-offset> 0.1 </pitch-offset>
-    <life>4.0</life>
-    <wind>false</wind>
-    <weight>0.07495</weight>
-    <cd>0.193</cd>
-    <eda>0.00571198</eda> 
-    <collision>true</collision>
-    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
-    <impact>true</impact>
-    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
-    <submodel-path>Aircraft/A-26-Invader/Models/Effects/guns/bullet-submodel.xml</submodel-path>
-  </submodel>
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset alias="../../cannon/pitch-offset"/>
+	</submodel>
 
-  <submodel>
-    <name>center-right-up-up</name>
-    <model>Aircraft/A-26-Invader/Models/Effects/guns/apibullet-tracer.xml</model>
-    <trigger>controls/armament/trigger</trigger>
-    <speed>2460.0</speed>
-    <repeat>true</repeat>
-    <delay>0.6</delay>
-    <count>-1</count>
+	<submodel>
+		<name>center-right-up-down smoke</name>
+		<model>Aircraft/A-26-Invader/Models/Effects/guns/smoke.xml</model>
+		<trigger alias="../../cannon/trigger"/>
+		<speed>200</speed>
+		<repeat>true</repeat>
+		<delay>0.08</delay>
+		<count>160</count>
+    <x-offset> 25.21 </x-offset> <!-- -7.683 m = 25.21 ft -->
+    <y-offset> -0.58 </y-offset> <!--  0.176 m = -0.58 ft -->
+    <z-offset> -1.70 </z-offset> <!-- -0.518 m = -1.70 ft -->
+		<yaw-offset>-60</yaw-offset>
+		<pitch-offset>-60</pitch-offset>
+		<eda>10</eda>
+		<wind>true</wind>
+		<buoyancy>33</buoyancy>
+		<life>5</life>
+	</submodel>
+
+	<submodel>
+		<name>center-right-up-up gun</name>
+		<model alias="../../cannon/model"/>
+		<trigger alias="../../cannon/trigger"/>
+		<speed alias="../../cannon/speed"/>
+		<cd alias="../../cannon/cd"/>
+		<eda alias="../../cannon/eda"/>
+		<fuse-range alias="../../cannon/fuse-range"/>
+		<weight alias="../../cannon/weight"/>
+		<life alias="../../cannon/life"/>
+		<repeat alias="../../cannon/repeat"/>
+		<delay alias="../../cannon/delay"/>
+		<count alias="../../cannon/count"/>
+		<wind alias="../../cannon/wind"/>
+		<expiry alias="../../cannon/expiry"/>
+		<collision alias="../../cannon/collision"/>
+		<impact alias="../../cannon/impact"/>
+		<submodel-path alias="../../cannon/submodel-path"/>
     <x-offset> 25.00 </x-offset> <!-- -7.620 m = 25.00 ft -->
     <y-offset> -0.58 </y-offset> <!--  0.176 m = -0.58 ft -->
-    <z-offset> -1,20 </z-offset> <!-- -0.367 m = -1.20 ft -->
-    <yaw-offset> 0.0 </yaw-offset>
-    <pitch-offset> 0.1 </pitch-offset>
-    <life>4.0</life>
-    <wind>false</wind>
-    <weight>0.07495</weight>
-    <cd>0.193</cd>
-    <eda>0.00571198</eda> 
-    <collision>true</collision>
-    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
-    <impact>true</impact>
-    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
-    <submodel-path>Aircraft/A-26-Invader/Models/Effects/guns/bullet-submodel.xml</submodel-path>
-  </submodel>
+    <z-offset> -1.20 </z-offset> <!-- -0.367 m = -1.20 ft -->
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset alias="../../cannon/pitch-offset"/>
+	</submodel>
 
-  <submodel>
-    <name>right-left</name>
-    <model>Aircraft/A-26-Invader/Models/Effects/guns/apibullet-tracer.xml</model>
-    <trigger>controls/armament/trigger</trigger>
-    <speed>2460.0</speed>
-    <repeat>true</repeat>
-    <delay>0.6</delay>
-    <count>-1</count>
-    <x-offset>  11.03 </x-offset> <!-- -3.361 m =  11.03 ft -->
-    <y-offset> -17.81 </y-offset> <!--  5.428 m = -17.81 ft -->
-    <z-offset>  -0.31 </z-offset> <!-- -0.095 m =  -0.31 ft -->
-    <yaw-offset> 0.0 </yaw-offset>
-    <pitch-offset> 0.1 </pitch-offset>
-    <life>4.0</life>
-    <wind>false</wind>
-    <weight>0.07495</weight>
-    <cd>0.193</cd>
-    <eda>0.00571198</eda> 
-    <collision>true</collision>
-    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
-    <impact>true</impact>
-    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
-    <submodel-path>Aircraft/A-26-Invader/Models/Effects/guns/bullet-submodel.xml</submodel-path>
-  </submodel>
+	<submodel>
+		<name>center-right-up-up smoke</name>
+		<model>Aircraft/A-26-Invader/Models/Effects/guns/smoke.xml</model>
+		<trigger alias="../../cannon/trigger"/>
+		<speed>200</speed>
+		<repeat>true</repeat>
+		<delay>0.08</delay>
+		<count>160</count>
+    <x-offset> 25.00 </x-offset> <!-- -7.620 m = 25.00 ft -->
+    <y-offset> -0.58 </y-offset> <!--  0.176 m = -0.58 ft -->
+    <z-offset> -1.20 </z-offset> <!-- -0.367 m = -1.20 ft -->
+		<yaw-offset>-60</yaw-offset>
+		<pitch-offset>-60</pitch-offset>
+		<eda>10</eda>
+		<wind>true</wind>
+		<buoyancy>33</buoyancy>
+		<life>5</life>
+	</submodel>
 
-  <submodel>
-    <name>right-center</name>
-    <model>Aircraft/A-26-Invader/Models/Effects/guns/apibullet-tracer.xml</model>
-    <trigger>controls/armament/trigger</trigger>
-    <speed>2460.0</speed>
-    <repeat>true</repeat>
-    <delay>0.6</delay>
-    <count>-1</count>
+	<submodel>
+		<name>right-center gun</name>
+		<model alias="../../cannon/model"/>
+		<trigger alias="../../cannon/trigger"/>
+		<speed alias="../../cannon/speed"/>
+		<cd alias="../../cannon/cd"/>
+		<eda alias="../../cannon/eda"/>
+		<fuse-range alias="../../cannon/fuse-range"/>
+		<weight alias="../../cannon/weight"/>
+		<life alias="../../cannon/life"/>
+		<repeat alias="../../cannon/repeat"/>
+		<delay alias="../../cannon/delay"/>
+		<count alias="../../cannon/count"/>
+		<wind alias="../../cannon/wind"/>
+		<expiry alias="../../cannon/expiry"/>
+		<collision alias="../../cannon/collision"/>
+		<impact alias="../../cannon/impact"/>
+		<submodel-path alias="../../cannon/submodel-path"/>
     <x-offset>  11.28 </x-offset> <!-- -3.437 m  11.28 ft -->
-    <y-offset> -18,28 </y-offset> <!--  5.571 m -18.28 ft -->
+    <y-offset> -18.28 </y-offset> <!--  5.571 m -18.28 ft -->
     <z-offset>  -0.29 </z-offset> <!-- -0.088 m  -0.29 ft -->
-    <yaw-offset> 0.0 </yaw-offset>
-    <pitch-offset> 0.1 </pitch-offset>
-    <life>4.0</life>
-    <wind>false</wind>
-    <weight>0.07495</weight>
-    <cd>0.193</cd>
-    <eda>0.00571198</eda> 
-    <collision>true</collision>
-    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
-    <impact>true</impact>
-    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
-    <submodel-path>Aircraft/A-26-Invader/Models/Effects/guns/bullet-submodel.xml</submodel-path>
-  </submodel>
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset alias="../../cannon/pitch-offset"/>
+	</submodel>
 
-  <submodel>
-    <name>right-exterior</name>
-    <model>Aircraft/A-26-Invader/Models/Effects/guns/apibullet-tracer.xml</model>
-    <trigger>controls/armament/trigger</trigger>
-    <speed>2460.0</speed>
-    <repeat>true</repeat>
-    <delay>0.6</delay>
-    <count>-1</count>
+	<submodel>
+		<name>right-center smoke</name>
+		<model>Aircraft/A-26-Invader/Models/Effects/guns/smoke.xml</model>
+		<trigger alias="../../cannon/trigger"/>
+		<speed>200</speed>
+		<repeat>true</repeat>
+		<delay>0.08</delay>
+		<count>160</count>
+    <x-offset>  11.28 </x-offset> <!-- -3.437 m  11.28 ft -->
+    <y-offset> -18.28 </y-offset> <!--  5.571 m -18.28 ft -->
+    <z-offset>  -0.29 </z-offset> <!-- -0.088 m  -0.29 ft -->
+		<yaw-offset>-60</yaw-offset>
+		<pitch-offset>-60</pitch-offset>
+		<eda>10</eda>
+		<wind>true</wind>
+		<buoyancy>33</buoyancy>
+		<life>5</life>
+	</submodel>
+
+	<submodel>
+		<name>right-exterior gun</name>
+		<model alias="../../cannon/model"/>
+		<trigger alias="../../cannon/trigger"/>
+		<speed alias="../../cannon/speed"/>
+		<cd alias="../../cannon/cd"/>
+		<eda alias="../../cannon/eda"/>
+		<fuse-range alias="../../cannon/fuse-range"/>
+		<weight alias="../../cannon/weight"/>
+		<life alias="../../cannon/life"/>
+		<repeat alias="../../cannon/repeat"/>
+		<delay alias="../../cannon/delay"/>
+		<count alias="../../cannon/count"/>
+		<wind alias="../../cannon/wind"/>
+		<expiry alias="../../cannon/expiry"/>
+		<collision alias="../../cannon/collision"/>
+		<impact alias="../../cannon/impact"/>
+		<submodel-path alias="../../cannon/submodel-path"/>
     <x-offset>  11.03 </x-offset> <!-- -3.361 m =  11.03 ft -->
     <y-offset> -18.80 </y-offset> <!--  5.729 m = -18.80 ft -->
-    <z-offset>  -0,26 </z-offset> <!-- -0.078 m =  -0.26 ft -->
-    <yaw-offset> 0.0 </yaw-offset>
-    <pitch-offset> 0.1 </pitch-offset>
-    <life>4.0</life>
-    <wind>false</wind>
-    <weight>0.07495</weight>
-    <cd>0.193</cd>
-    <eda>0.00571198</eda> 
-    <collision>true</collision>
-    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
-    <impact>true</impact>
-    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
-    <submodel-path>Aircraft/A-26-Invader/Models/Effects/guns/bullet-submodel.xml</submodel-path>
-  </submodel>
+    <z-offset>  -0.26 </z-offset> <!-- -0.078 m =  -0.26 ft -->
+		<yaw-offset>0</yaw-offset>
+		<pitch-offset alias="../../cannon/pitch-offset"/>
+	</submodel>
+
+	<submodel>
+		<name>right-exterior smoke</name>
+		<model>Aircraft/A-26-Invader/Models/Effects/guns/smoke.xml</model>
+		<trigger alias="../../cannon/trigger"/>
+		<speed>200</speed>
+		<repeat>true</repeat>
+		<delay>0.08</delay>
+		<count>160</count>
+    <x-offset>  11.03 </x-offset> <!-- -3.361 m =  11.03 ft -->
+    <y-offset> -18.80 </y-offset> <!--  5.729 m = -18.80 ft -->
+    <z-offset>  -0.26 </z-offset> <!-- -0.078 m =  -0.26 ft -->
+		<yaw-offset>-60</yaw-offset>
+		<pitch-offset>-60</pitch-offset>
+		<eda>10</eda>
+		<wind>true</wind>
+		<buoyancy>33</buoyancy>
+		<life>5</life>
+	</submodel>
 
 </PropertyList>
 

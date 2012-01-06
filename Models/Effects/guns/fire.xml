@@ -7,15 +7,6 @@
     <type>normal</type>
     <texture>smoke.png</texture>
 
-    <offsets>
-      <x-m> 0.0 </x-m>
-      <y-m> 0.0 </y-m>
-      <z-m> 0.0 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
-    </offsets>
-
     <condition>
       <property>controls/armament/trigger</property>
     </condition>
@@ -30,13 +21,13 @@
     </placer>
 
     <shooter>
-      <theta-min-deg>84</theta-min-deg>
-      <theta-max-deg>86</theta-max-deg>
-      <phi-min-deg>-1.5</phi-min-deg>
-      <phi-max-deg>1.5</phi-max-deg>
+      <theta-min-deg> 84.0 </theta-min-deg>
+      <theta-max-deg> 86.0 </theta-max-deg>
+      <phi-min-deg>   -1.5 </phi-min-deg>
+      <phi-max-deg>    1.5 </phi-max-deg>
       <speed-mps>
-        <value>2</value>
-        <spread>0</spread>
+        <value>  2 </value>
+        <spread> 0 </spread>
       </speed-mps>
       <rotation-speed>
         <x-min-deg-sec>  5 </x-min-deg-sec>
@@ -50,8 +41,8 @@
 
     <counter>
       <particles-per-sec>
-        <value>150</value>
-        <spread>0</spread>
+        <value>  150 </value>
+        <spread>   0 </spread>
       </particles-per-sec>
     </counter>
       
@@ -66,10 +57,9 @@
           <alpha><value> 0.3 </value></alpha>
         </color>
         <size>
-          <value>0.01</value>
+          <value> 0.01 </value>
         </size>
       </start>
-        
       <end>
         <color>
           <red><value>   0.8 </value></red>
@@ -78,22 +68,22 @@
           <alpha><value> 1.0 </value></alpha>
         </color>
         <size>
-          <value>0.15</value>
+          <value> 0.15 </value>
         </size>
       </end>
         
       <life-sec>
-        <value>0.10</value>
+        <value> 0.10 </value>
       </life-sec>
         
-      <mass-kg>0.25</mass-kg>
-      <radius-m>0.1</radius-m>
+      <mass-kg>  0.25 </mass-kg>
+      <radius-m> 0.10 </radius-m>
     </particle>
       
     <program>
-      <fluid>air</fluid>
-      <gravity>false</gravity>
-      <wind>false</wind>
+      <fluid>     air </fluid>
+      <gravity> false </gravity>
+      <wind>    false </wind>
     </program>
       
   </particlesystem>

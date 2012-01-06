@@ -7,15 +7,6 @@
     <type>normal</type>
     <texture>smoke.png</texture>
 
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
-
     <emissive> true      </emissive>
     <lighting> true      </lighting>
     <align>    billboard </align>  <!-- billboard / fixed -->
@@ -26,13 +17,13 @@
     </placer>
 
     <shooter>
-      <theta-min-deg>84</theta-min-deg>
-      <theta-max-deg>86</theta-max-deg>
-      <phi-min-deg>-1.5</phi-min-deg>
-      <phi-max-deg>1.5</phi-max-deg>
+      <theta-min-deg> 84.0 </theta-min-deg>
+      <theta-max-deg> 86.0 </theta-max-deg>
+      <phi-min-deg>   -1.5 </phi-min-deg>
+      <phi-max-deg>    1.5 </phi-max-deg>
       <speed-mps>
-        <value>2</value>
-        <spread>0</spread>
+        <value>  2 </value>
+        <spread> 0 </spread>
       </speed-mps>
       <rotation-speed>
         <x-min-deg-sec>  5 </x-min-deg-sec>
@@ -46,8 +37,8 @@
 
     <counter>
       <particles-per-sec>
-        <value>150</value>
-        <spread>0</spread>
+        <value>  150 </value>
+        <spread>   0 </spread>
       </particles-per-sec>
     </counter>
       
@@ -63,7 +54,6 @@
           <value> 0.3 </value>
         </size>
       </start>
-        
       <end>
         <color>
           <red><value>   0.8 </value></red>
@@ -85,7 +75,7 @@
     </particle>
       
     <program>
-      <fluid>   air   </fluid>
+      <fluid>     air </fluid>
       <gravity> false </gravity>
       <wind>    true  </wind>
     </program>
