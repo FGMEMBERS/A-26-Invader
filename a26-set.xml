@@ -4,18 +4,18 @@
 <PropertyList include="a26-yasim-cnf.xml">
 
   <sim>
-    <description>A 26 Invader</description>
-    <author>BARANGER Emmanuel</author>
+
+    <description>A 26 Invader (YASim)</description>
+    <author>BARANGER Emmanuel (3D), JC_SV (panel)</author>
+
+    <rating>
+      <FDM type="int">     2 </FDM>
+      <systems type="int"> 2 </systems>
+      <cockpit type="int"> 3 </cockpit>
+      <model type="int">   3 </model>
+    </rating>
+
   </sim>
-
-
- <nasal>
-   <SCR_522C>
-      <file>Aircraft/Instruments-3d/SCR-522C/Nasal/SCR-522C.nas</file>
-   </SCR_522C>
-</nasal>  
-
-
 
 </PropertyList>
 

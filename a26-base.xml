@@ -4,7 +4,7 @@
 
   <sim include="Nasal/views.xml">
  
-    <author>BARANGER Emmanuel (3D)</author>
+    <author>BARANGER Emmanuel (3D), JC_SV (panel)</author>
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
    
@@ -123,6 +123,9 @@
       <file>Aircraft/A-26-Invader/Nasal/weapons.nas</file>
       <file>Aircraft/A-26-Invader/Nasal/revi.nas</file>
     </guns>
+    <SCR_522C>
+       <file>Aircraft/A-26-Invader/Models/Interior/Radio_Equipment/SCR-522C/Nasal/SCR-522C.nas</file>
+    </SCR_522C>
   </nasal>
 
 </PropertyList>

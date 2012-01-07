@@ -84,7 +84,7 @@
   </model>
 
   <model>
-    <path>/Aircraft/A-26-Invader/Models/Interior/Radio_Equipment/SCR-522C/BC-602-A.xml</path>
+    <path>Aircraft/A-26-Invader/Models/Interior/Radio_Equipment/SCR-522C/BC-602-A.xml</path>
      <offsets>
       <x-m> -4.573 </x-m>
       <y-m> -0.110 </y-m>
