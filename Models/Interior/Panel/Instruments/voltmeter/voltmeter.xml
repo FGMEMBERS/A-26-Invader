@@ -5,8 +5,9 @@
   <path>voltmeter.ac</path>
 
   <animation>
+    <object-name>bezel</object-name>
+    <object-name>cover</object-name>
     <object-name>face</object-name>
-    <object-name>fond</object-name>
     <object-name>needle</object-name>
     
     <object-name>vitre</object-name>

@@ -21,7 +21,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>glass.png</texture>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitre</object-name>
   </animation>
 
@@ -31,10 +31,10 @@
     <object-name>ptrL</object-name>   
     <object-name>ptrR</object-name>
     <emission>
-      <red>   0.9 </red>
-      <green> 0.5 </green>
-      <blue>  0.2 </blue>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
@@ -44,22 +44,22 @@
     <property>consumables/fuel/tank[0]/level-gal_us</property>
     <factor>10</factor>
     <interpolation>
-     <entry><ind>  0.000 </ind><dep>  0.0 </dep></entry>
-     <entry><ind> 50.000 </ind><dep>  14.0 </dep></entry>
-     <entry><ind> 98.66 </ind><dep> 28.0 </dep></entry>
+     <entry><ind>   0.00 </ind><dep>  0.0 </dep></entry>
+     <entry><ind>  50.00 </ind><dep> 14.0 </dep></entry>
+     <entry><ind>  98.66 </ind><dep> 28.0 </dep></entry>
      <entry><ind> 177.33 </ind><dep> 59.5 </dep></entry>
-     <entry><ind> 300 </ind><dep> 85.0 </dep></entry>
+     <entry><ind> 300.00 </ind><dep> 85.0 </dep></entry>
     </interpolation>
+    <center>
+      <x-m>  0.004151 </x-m>
+      <y-m> -0.033880 </y-m>
+      <z-m>  0.004920 </z-m>  
+    </center>
     <axis> 
       <x> 1 </x>
       <y> 0 </y>
       <z> 0 </z>
     </axis>
-    <center>
-      <x-m>  0.008 </x-m>
-      <y-m> -0.028 </y-m>
-      <z-m> -0.004 </z-m>  
-    </center>
   </animation>         
  
   <animation> 
@@ -67,22 +67,23 @@
     <object-name>ptrR</object-name>
     <property>consumables/fuel/tank[1]/level-gal_us</property>
     <interpolation>
-     <entry><ind>  0.000 </ind><dep>  0.0 </dep></entry>
-     <entry><ind> 50.000 </ind><dep>  14.0 </dep></entry>
-     <entry><ind> 98.66 </ind><dep> 28.0 </dep></entry>
+     <entry><ind>   0.00 </ind><dep>  0.0 </dep></entry>
+     <entry><ind>  50.00 </ind><dep> 14.0 </dep></entry>
+     <entry><ind>  98.66 </ind><dep> 28.0 </dep></entry>
      <entry><ind> 177.33 </ind><dep> 59.5 </dep></entry>
-     <entry><ind> 300 </ind><dep> 85.0 </dep></entry>
+     <entry><ind> 300.00 </ind><dep> 85.0 </dep></entry>
     </interpolation>
+    <center>
+      <x-m> 0.003891 </x-m>
+      <y-m> 0.033070 </y-m>
+      <z-m> 0.003870 </z-m>  
+    </center>
     <axis> 
       <x> -1 </x>
       <y>  0 </y>
       <z>  0 </z>
     </axis>
-    <center>
-      <x-m> 0.008 </x-m>
-      <y-m> 0.028 </y-m>
-      <z-m>-0.004 </z-m>  
-    </center>
   </animation>         
  
 </PropertyList>
+

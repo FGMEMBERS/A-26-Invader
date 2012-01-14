@@ -12,6 +12,7 @@
     <object-name>inttourporteG</object-name>
     <object-name>inttourporteD</object-name>
     <object-name>structure</object-name>
+    <object-name>rivets</object-name>
 
     <!-- Objets transparents -->
     <object-name>intvitres</object-name>
