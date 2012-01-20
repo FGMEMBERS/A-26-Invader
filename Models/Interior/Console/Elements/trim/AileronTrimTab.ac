@@ -3,7 +3,7 @@ MATERIAL "DefaultWhite" rgb 0.8 0.8 0.8 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 50 t
 OBJECT world
 kids 1
 OBJECT poly
-name "ruddertrim"
+name "AileronTrimTab"
 loc 0 0 -0
 data 10
 ruddertrim

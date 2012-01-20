@@ -74,6 +74,29 @@
     </offsets>
   </model>
 
+  <!-- Overhead Panel -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/OverheadPanel/OverheadPanel.xml</path>
+    <offsets>
+      <x-m> -4.240 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.382 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/OverheadPanel/OverheadSwitches.xml</path>
+  </model>
+
+  <!-- Overhead Lamp -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Lamps/Lamp.xml</path>
+    <offsets>
+      <x-m> -3.885 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.315 </z-m>
+    </offsets>
+  </model>
 
   <model>
     <path>Aircraft/A-26-Invader/Models/Interior/Console/console.xml</path>
@@ -152,6 +175,17 @@
     </axis>
   </animation>
 
+ <!-- HYDRAULICS  ( REAR ) -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Hydraulics/Hydraulics.xml</path>
+    <offsets>
+       <x-m>-3.440 </x-m>
+       <y-m>-0.000</y-m>
+       <z-m>-0.063 </z-m>
+    </offsets>
+  </model>
+
+
  <!-- YOKE -->
   <model>
     <path>Aircraft/A-26-Invader/Models/Interior/Yokes/yoke.xml</path>
@@ -171,7 +205,7 @@
   <model>
     <path>Aircraft/A-26-Invader/Models/Interior/ashtray/ashtray.xml</path>
     <offsets>
-      <x-m> -4.002 </x-m>
+      <x-m> -4.022 </x-m>
       <y-m>  0.634 </y-m>
       <z-m> -0.319 </z-m>
     </offsets>
@@ -183,7 +217,7 @@
     <offsets>
       <x-m> -4.937 </x-m>
       <y-m>  0.633 </y-m>
-      <z-m> -0.385 </z-m>
+      <z-m> -0.405 </z-m>
     </offsets>
   </model>
 
@@ -191,9 +225,9 @@
   <model>
     <path>Aircraft/A-26-Invader/Models/Interior/spare/spare.xml</path>
     <offsets>
-      <x-m> -4.605 </x-m>
+      <x-m> -4.625 </x-m>
       <y-m>  0.643 </y-m>
-      <z-m> -0.283 </z-m>
+      <z-m> -0.313 </z-m>
     </offsets>
   </model>
 
@@ -203,7 +237,7 @@
     <offsets>
       <x-m> -3.922 </x-m>
       <y-m>  0.643 </y-m>
-      <z-m> -0.306 </z-m>
+      <z-m> -0.326 </z-m>
     </offsets>
   </model>
 

@@ -18,6 +18,7 @@
     <visible>false</visible>
   </animation>
 
+<!--
   <animation>
     <type>material</type>
     <object-name>bouton</object-name>
@@ -28,5 +29,6 @@
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
+-->
 
 </PropertyList>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <!-- First 8 Overhead Switches -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.420 </x-m>
+      <y-m> -0.037 </y-m>
+      <z-m>  0.362 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.407 </x-m>
+      <y-m> -0.037 </y-m>
+      <z-m>  0.365 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.394 </x-m>
+      <y-m> -0.037 </y-m>
+      <z-m>  0.365 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.381 </x-m>
+      <y-m> -0.037 </y-m>
+      <z-m>  0.367 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.368 </x-m>
+      <y-m> -0.037 </y-m>
+      <z-m>  0.367 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.355 </x-m>
+      <y-m> -0.037 </y-m>
+      <z-m>  0.370 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.342 </x-m>
+      <y-m> -0.037 </y-m>
+      <z-m>  0.370 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.329 </x-m>
+      <y-m> -0.037 </y-m>
+      <z-m>  0.370 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Battery Switches -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.258 </x-m>
+      <y-m> -0.028 </y-m>
+      <z-m>  0.370 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.242 </x-m>
+      <y-m> -0.028 </y-m>
+      <z-m>  0.370 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Generator Switches -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.222 </x-m>
+      <y-m> -0.028 </y-m>
+      <z-m>  0.370 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.202 </x-m>
+      <y-m> -0.028 </y-m>
+      <z-m>  0.370 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Landing Lights Switch -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.215 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.370 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Dome Switch -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.258 </x-m>
+      <y-m>  0.028 </y-m>
+      <z-m>  0.370 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Prime, Starter, Prime, OilDilution Switches-->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.332 </x-m>
+      <y-m>  0.031 </y-m>
+      <z-m>  0.370 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.345 </x-m>
+      <y-m>  0.031 </y-m>
+      <z-m>  0.370 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.358 </x-m>
+      <y-m>  0.031 </y-m>
+      <z-m>  0.370 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.383 </x-m>
+      <y-m>  0.019 </y-m>
+      <z-m>  0.368 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.383 </x-m>
+      <y-m>  0.047 </y-m>
+      <z-m>  0.368 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -4.401 </x-m>
+      <y-m>  0.031 </y-m>
+      <z-m>  0.364 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
+

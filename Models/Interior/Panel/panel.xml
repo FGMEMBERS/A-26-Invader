@@ -68,7 +68,7 @@
     <offsets>
       <x-m> -0.079 </x-m>
       <y-m> -0.257 </y-m>
-      <z-m>  0.255 </z-m>
+      <z-m>  0.250 </z-m>
     </offsets>
   </model>
 
@@ -259,6 +259,27 @@
     <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/panel-switches.xml</path>
   </model>
  
+  <!-- LAMP LIGHTS -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/LightLamps/FluorLight.xml</path>
+    <offsets>
+      <x-m>  0.010 </x-m>
+      <y-m> -0.665 </y-m>
+      <z-m>  0.200 </z-m>
+      <roll-deg> 110 </roll-deg>
+
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/LightLamps/FluorLight.xml</path>
+    <offsets>
+      <x-m>  0.010 </x-m>
+      <y-m>  0.155 </y-m>
+      <z-m>  0.385 </z-m>
+    </offsets>
+  </model>
+
   <!-- GUNSIGHT -->
   <model>
     <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/N-9_Gunsight/N-9_Gunsight.xml</path>

@@ -2,10 +2,10 @@
 
 <PropertyList>
 
-  <path>rudder.ac</path>
+  <path>AileronTrimTab.ac</path>
 
   <animation>
-    <object-name>ruddertrim</object-name>
+    <object-name>AileronTrimTab</object-name>
   </animation>
 
 </PropertyList>

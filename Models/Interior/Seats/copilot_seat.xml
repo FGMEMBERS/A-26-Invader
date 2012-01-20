@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>copilot_seat.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>UpperSeat</object-name>
+    <object-name>UpperSupport</object-name>
+    <object-name>BottomSeat</object-name>
+    <object-name>BottomSupport</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>BottomSeat</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/config/copilotseat-up</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>UpperSeat</object-name>
+    <object-name>UpperSupport</object-name>
+    <object-name>BottomSeat</object-name>
+    <object-name>BottomSupport</object-name>
+    <property>sim/model/config/copilotseat-up</property>
+    <factor> 90 </factor>
+    <center>
+      <x-m> -0.125 </x-m>
+      <y-m> -0.065 </y-m>
+      <z-m> -0.049 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>UpperSeat</object-name>
+    <object-name>UpperSupport</object-name>
+    <property>sim/model/config/copilotseat-up</property>
+    <factor> 90 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z>-1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

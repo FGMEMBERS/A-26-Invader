@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+   <path>Lamp.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>Reflector</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>Glass</object-name>
+  </animation>
+
+</PropertyList>
+

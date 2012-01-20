@@ -31,7 +31,7 @@
   </model>
 
   <model>
-    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/trim/rudder.xml</path>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/trim/AileronTrimTab.xml</path>
     <offsets>
       <x-m>  0.31000 </x-m>
       <y-m>  0.03208 </y-m>
@@ -196,13 +196,29 @@
 
   <!-- Button -->
   <model>
-    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/divers/bouton2.xml</path>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/trim/RudderTrimTab.xml</path>
     <offsets>
       <x-m>  0.21700 </x-m>
       <y-m> -0.06798 </y-m>
       <z-m> -0.04462 </z-m>
+ 
     </offsets>
   </model>
+
+  <!-- LAMP LIGHT -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/LightLamps/FluorLight.xml</path>
+    <offsets>
+      <x-m>  0.38000 </x-m>
+      <y-m> -0.07324 </y-m>
+      <z-m>  0.013000 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 200 </heading-deg>
+    </offsets>
+  </model>
+
+
 
   <!-- Rudder Trim  -->
 <!--  <animation>

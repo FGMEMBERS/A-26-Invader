@@ -2,11 +2,11 @@
 
 <PropertyList>
 
-  <path>bombebay.ac</path>
+  <path>RudderTrimTab.ac</path>
 
   <animation>
-    <object-name>BombayCtrlLever</object-name>
+    <object-name>RudderTrimTab</object-name>
+
   </animation>
 
 </PropertyList>
-
