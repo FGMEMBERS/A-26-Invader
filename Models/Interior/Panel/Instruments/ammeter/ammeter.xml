@@ -1,21 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <PropertyList>
 
   <path>ammeter.ac</path>
 
   <animation>
+    <!-- Objets opaques -->
     <object-name>bezel</object-name>
     <object-name>cover</object-name>
     <object-name>face</object-name>
     <object-name>needle</object-name>
+    <object-name>face_emit</object-name>
    	
+    <!-- Objets transparents -->
     <object-name>vitre</object-name>
   </animation>
-
+<!--
   <animation>
     <type>noshadow</type>
     <object-name>vitre</object-name>
+    <condition>
+      <not><property>sim/rendering/rembrandt</property></not>
+    </condition>
   </animation>
 
   <animation>
@@ -23,19 +29,118 @@
     <shader>chrome</shader>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitre</object-name>
+     <condition>
+      <not><property>sim/rendering/rembrandt</property></not>
+    </condition>
   </animation>
-
+-->
   <animation>
     <type>material</type>
     <object-name>face</object-name>
     <object-name>needle</object-name>
+    <condition>
+      <and>
+        <not><property>sim/rendering/rembrandt</property></not>
+        <property>systems/electrical/outputs/instrument-lights</property>
+      </and>
+    </condition>
     <emission>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
-      <red>   0.50 </red>
-      <green> 0.25</green>
-      <blue>  0.25 </blue>
+	   <red>0.2</red>
+	   <green>0.25</green>
+	   <blue>0.7035</blue>
     </emission>
   </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>vitre</object-name>
+    <condition>
+             <not-equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+                <value>0</value>
+             </not-equals>
+   </condition>
+  </animation>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>vitre</object-name>
+    <object-name>face_emit</object-name>
+    <object-name>needle</object-name>
+ </effect>
+ 
+    <animation>
+    <type>select</type>
+    <object-name>face_emit</object-name>
+	<condition>
+	   <and>
+             <equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+                <value>0</value>
+             </equals>
+             <equals>
+                <property>sim/rendering/rembrandt</property>
+                <value>true</value>
+             </equals>
+	   </and>
+	</condition>
+    </animation> 
+
+    <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>face_emit</object-name>
+    <object-name>needle</object-name>
+       <condition>
+	   <and>
+             <equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+                <value>0</value>
+             </equals>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[0]</property>
+	        <value>true</value>
+	      </equals>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[1]</property>
+	        <value>true</value>
+	      </equals>
+	   </and>
+       </condition>
+       <emission>
+	   <red>0.2</red>
+	   <green>0.25</green>
+	   <blue>0.7035</blue>
+       </emission>
+   </animation>
+
+   <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>face_emit</object-name>
+    <object-name>needle</object-name>
+       <condition>
+             <equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+                <value>0</value>
+             </equals>
+	   <or>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[0]</property>
+	        <value>true</value>
+	      </equals>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[1]</property>
+	        <value>true</value>
+	      </equals>
+	   </or>
+       </condition>
+       <emission>
+		 <red>0.10</red>
+		 <green>0.125</green>
+		 <blue>0.3417</blue>
+       </emission>
+   </animation>
 
   <animation>
     <type>rotate</type>

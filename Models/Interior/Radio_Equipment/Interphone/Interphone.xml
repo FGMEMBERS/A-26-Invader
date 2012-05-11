@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <PropertyList>
 
@@ -7,23 +7,20 @@
     <offsets>
       <x-m> -4.525 </x-m>
       <y-m> -0.711 </y-m>
-      <z-m> -0.292 </z-m>
+      <z-m> -0.342 </z-m>
       <heading-deg> 90 </heading-deg>
     </offsets>
   </model>
-
 
   <model>
     <path>Aircraft/A-26-Invader/Models/Interior/Radio_Equipment/Interphone/Radio_Filter_Unit.xml</path>
     <offsets>
       <x-m> -4.730 </x-m>
       <y-m> -0.700 </y-m>
-      <z-m> -0.285 </z-m>
+      <z-m> -0.335 </z-m>
       <heading-deg> 90 </heading-deg>
     </offsets>
   </model>
-
-
 
 </PropertyList>
 

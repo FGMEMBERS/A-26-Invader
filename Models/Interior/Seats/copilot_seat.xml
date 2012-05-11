@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <PropertyList>
 
@@ -27,6 +27,39 @@
       </binding>
     </action>
   </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>UpperSupport</object-name>
+    <property>sim/model/config/copilotseat-up</property>
+    <factor> 50 </factor>
+    <center>
+      <x-m> -0.138 </x-m>
+      <y-m> -0.199 </y-m>
+      <z-m>  0.100 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y>-1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>BottomSupport</object-name>
+    <property>sim/model/config/copilotseat-up</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -0.138 </x-m>
+      <y-m> -0.199 </y-m>
+      <z-m> -0.055 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y>-1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
 
   <animation>
     <type>rotate</type>
@@ -51,7 +84,6 @@
   <animation>
     <type>rotate</type>
     <object-name>UpperSeat</object-name>
-    <object-name>UpperSupport</object-name>
     <property>sim/model/config/copilotseat-up</property>
     <factor> 90 </factor>
     <axis>
@@ -60,6 +92,9 @@
       <z>-1 </z>
     </axis>
   </animation>
+
+
+
 
 </PropertyList>
 

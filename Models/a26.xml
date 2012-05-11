@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <PropertyList>
 
@@ -159,11 +159,8 @@
   </animation>
 
   <effect>
-    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <inherits-from>Aircraft/A-26-Invader/Models/Effects/reflects/rnm</inherits-from>
     <object-name>fuselage</object-name>
-    <object-name>tourvitres</object-name>
-    <object-name>tourporteG</object-name>
-    <object-name>tourporteD</object-name>
     <object-name>ailes</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
@@ -181,23 +178,49 @@
     <object-name>porteGI</object-name>
     <object-name>porteDE</object-name>
     <object-name>porteDI</object-name>
-    <object-name>antenne</object-name>
     <object-name>tourelletoit</object-name>
     <object-name>tourellesous</object-name>
     <object-name>moteurs</object-name>
   </effect>
 
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>tourvitres</object-name>
+    <object-name>tourporteG</object-name>
+    <object-name>tourporteD</object-name>
+    <object-name>antenne</object-name>
+    <object-name>tourelletoit</object-name>
+    <object-name>tourellesous</object-name>
+  </effect>
+<!--
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <condition>
+      <not><property>sim/rendering/rembrandt</property></not>
+    </condition>
     <object-name>vitres</object-name>
     <object-name>vitreporteG</object-name>
     <object-name>vitreporteD</object-name>
   </animation>
+-->
 
-  <animation>
+  <!--  NO REMBRANDT support for transparent objects -->
+
+<!-- 
+ <animation>
     <type>noshadow</type>
+    <condition>
+      <equal>
+        <property>sim/rendering/rembrandt</property>
+        <value>false</value>
+      </equal>
+    </condition>
+
+    <condition>
+      <not><property>sim/rendering/rembrandt</property></not>
+    </condition>
     <object-name>vitres</object-name>
     <object-name>vitreporteG</object-name>
     <object-name>vitreporteD</object-name>
@@ -207,8 +230,21 @@
     <object-name>propdiscD</object-name>
     <object-name>cables</object-name>
   </animation>
+-->
 
-  <!-- Une ombre pour OSG -->
+  <!--  REMBRANDT support for transparent objects -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>vitres</object-name>
+    <object-name>vitreporteG</object-name>
+    <object-name>vitreporteD</object-name>
+    <object-name>propdiscG</object-name>
+    <object-name>propblurG</object-name>
+    <object-name>propdiscD</object-name>
+    <object-name>propblurD</object-name>
+  </effect>
+
+  <!-- NO REMBRANDT shadow -->
   <model>
     <path>Aircraft/A-26-Invader/Models/shadow.xml</path>
     <offsets>
@@ -216,6 +252,11 @@
       <y-m>  0.000 </y-m>
       <z-m> -2.320 </z-m>
     </offsets>
+  </model>
+
+  <!-- Interieur -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/interior.xml</path>
   </model>
 
   <!-- Cranking -->
@@ -268,11 +309,6 @@
       <y-m>  2.889 </y-m>
       <z-m> -2.724 </z-m>
     </offsets>
-  </model>
-
-  <!-- Intérieur -->
-  <model>
-    <path>Aircraft/A-26-Invader/Models/Interior/interior.xml</path>
   </model>
 
   <!-- Effects de tir -->
@@ -455,7 +491,7 @@
     </offsets>
   </model>
 
-  <!-- Les hélices --> 
+  <!-- Les helices --> 
   <animation>
     <name>HeliceCompleteG</name>
     <object-name>propdiscG</object-name>
@@ -464,7 +500,7 @@
     <object-name>bolG</object-name>
   </animation>
 
-  <!-- Séléction de l'objet visible en fonction des rpm -->
+  <!-- Selection de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
     <object-name>propdiscG</object-name>
@@ -529,7 +565,7 @@
     <object-name>bolD</object-name>
   </animation>
 
-  <!-- Séléction de l'objet visible en fonction des rpm -->
+  <!-- Selection de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
     <object-name>propdiscD</object-name>
@@ -624,12 +660,12 @@
     <property>surface-positions/rudder-pos-norm</property>
     <factor> -20 </factor>
     <axis>
-      <x1-m> 6.348 </x1-m>
+      <x1-m> 6.488 </x1-m>
       <y1-m> 0.000 </y1-m>
       <z1-m> 0.168 </z1-m>
-      <x2-m> 6.441 </x2-m>
+      <x2-m> 6.508 </x2-m>
       <y2-m> 0.000 </y2-m>
-      <z2-m> 2.637 </z2-m>
+      <z2-m> 2.550 </z2-m>
     </axis>
   </animation>
 
@@ -725,7 +761,7 @@
     </axis>
   </animation>
 
-  <!-- Rentré des roues -->
+  <!-- Rentre des roues -->
   <animation>
     <name>TrainAvant</name>
     <object-name>roueA</object-name>
@@ -1066,7 +1102,7 @@
     </axis>
   </animation>
 
-  <!-- Portière gauche -->
+  <!-- Portiere gauche -->
   <animation>
     <name>PortiereGauche</name>
     <object-name>tourporteG</object-name>
@@ -1079,9 +1115,9 @@
     <property>/instrumentation/doors/crew/position-norm</property>
     <factor> 50 </factor>
     <center>
-      <x-m> -4.193 </x-m>
-      <y-m> -0.741 </y-m>
-      <z-m> -0.247 </z-m>
+      <x-m> -4.277 </x-m>
+      <y-m> -0.716 </y-m>
+      <z-m> -0.252 </z-m>
     </center>
     <axis>
       <x> 1 </x>
@@ -1102,9 +1138,9 @@
     <property>/instrumentation/doors/passenger/position-norm</property>
     <factor> -50 </factor>
     <center>
-      <x-m> -4.193 </x-m>
-      <y-m>  0.741 </y-m>
-      <z-m> -0.247 </z-m>
+      <x-m> -4.277 </x-m>
+      <y-m>  0.716 </y-m>
+      <z-m> -0.252 </z-m>
     </center>
     <axis>
       <x> 1 </x>

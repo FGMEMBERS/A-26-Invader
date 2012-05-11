@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <!--Température cylindre-->
 <PropertyList>
@@ -6,44 +6,158 @@
   <path>cyl.ac</path>
 
   <animation>
+    <!-- Objets opaques -->
     <object-name>fond</object-name>
     <object-name>fond2</object-name>
     <object-name>face</object-name>
     <object-name>needleL</object-name>
     <object-name>needleR</object-name>
+    <object-name>visses</object-name>
+    <object-name>face_emit</object-name>
 
+    <!-- Objets transparents -->
     <object-name>vitre</object-name>
   </animation>
-
+<!--
   <animation>
     <type>noshadow</type>
     <object-name>vitre</object-name>
+    <condition>
+      <not><property>sim/rendering/rembrandt</property></not>
+    </condition>
   </animation>
 
-    <animation>
+  <animation>
     <type>shader</type>
     <shader>chrome</shader>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitre</object-name>
+    <condition>
+      <not><property>sim/rendering/rembrandt</property></not>
+    </condition>
   </animation>
-
+-->
   <animation>
     <type>material</type>
     <object-name>face</object-name>
     <object-name>needleL</object-name>
     <object-name>needleR</object-name>
+    <condition>
+      <and>
+        <not><property>sim/rendering/rembrandt</property></not>
+        <property>systems/electrical/outputs/instrument-lights</property>
+      </and>
+    </condition>
     <emission>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
-      <red>   0.50 </red>
-      <green> 0.25 </green>
-      <blue>  0.25 </blue>
+	   <red>0.2</red>
+	   <green>0.25</green>
+	   <blue>0.7035</blue>
     </emission>
   </animation>
 
+  <animation>
+    <type>select</type>
+    <object-name>vitre</object-name>
+    <condition>
+             <not-equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+                <value>0</value>
+             </not-equals>
+   </condition>
+  </animation>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>face_emit</object-name>
+    <object-name>vitre</object-name>
+    <object-name>needleL</object-name>
+    <object-name>needleR</object-name>
+<!--
+    <condition>
+      <property>sim/rendering/rembrandt</property>
+    </condition>
+-->
+  </effect>
+
+    <animation>
+    <type>select</type>
+    <object-name>face_emit</object-name>
+       <condition>
+	   <and>
+             <equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+                <value>0</value>
+             </equals>
+             <equals>
+                <property>sim/rendering/rembrandt</property>
+                <value>true</value>
+             </equals>
+	   </and>
+       </condition>
+    </animation> 
+
+    <animation>
+    <type>material</type>
+    <object-name>face_emit</object-name>
+    <object-name>face</object-name>
+    <object-name>needleL</object-name>
+    <object-name>needleR</object-name>
+       <condition>
+	   <and>
+             <equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+                <value>0</value>
+             </equals>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[0]</property>
+	        <value>true</value>
+	      </equals>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[1]</property>
+	        <value>true</value>
+	      </equals>
+	   </and>
+       </condition>
+       <emission>
+	   <red>0.2</red>
+	   <green>0.25</green>
+	   <blue>0.7035</blue>
+       </emission>
+   </animation>
+
+   <animation>
+    <type>material</type>
+    <object-name>face_emit</object-name>
+    <object-name>face</object-name>
+    <object-name>needleL</object-name>
+    <object-name>needleR</object-name>
+       <condition>
+             <equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+                <value>0</value>
+             </equals>
+	   <or>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[0]</property>
+	        <value>true</value>
+	      </equals>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[1]</property>
+	        <value>true</value>
+	      </equals>
+	   </or>
+       </condition>
+       <emission>
+		 <red>0.10</red>
+		 <green>0.125</green>
+		 <blue>0.3417</blue>
+       </emission>
+   </animation>
+ 
   <animation> 
     <type>rotate</type>
     <object-name>needleL</object-name>
-    <property>engines/engine/cyl-temp</property>
+    <property>engines/engine[0]/cyl-temp</property>
     <interpolation>
       <entry><ind>   0 </ind><dep>   0.00 </dep></entry>
       <entry><ind>  50 </ind><dep>  12.75 </dep></entry>
@@ -59,8 +173,8 @@
     </center>
     <axis> 
       <x> 1 </x>
-      <y>  0 </y>
-      <z>  0 </z>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -83,8 +197,8 @@
     </center>
     <axis> 
       <x> -1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 

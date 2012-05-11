@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- 1 ft  =  0.3048 m
-     1 m = 3.2808399 ft
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<!--
+  1 ft  =  0.3048 m
+  1 m = 3.2808399 ft
 -->
 
 <PropertyList>
@@ -8,6 +10,7 @@
   <path>N-9_Gunsight.ac</path>
 
   <animation>
+    <!-- Objects Opaques -->
     <object-name>fond</object-name>
     <object-name>DLens.Frame1</object-name>
     <object-name>DLens.Frame2</object-name>
@@ -20,22 +23,20 @@
     <object-name>LensSwitch</object-name>
     <object-name>visses</object-name>
 
+    <!-- Objects Transparents -->
     <object-name>vitre_turn</object-name>
-    <object-name>Plens</object-name>
-    <object-name>Dlens</object-name>
+    <object-name>PLens</object-name>
+    <object-name>DLens</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
-    <object-name>vitre_turn</object-name>
-  </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/A-26-Invader/Models/Effects/glass/glass_shader.png</texture>
-    <object-name>vitre-turn</object-name>
-  </animation>
+  <!--  REMBRANDT support for transparent objects -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>vitre_turn</object-name>
+    <object-name>PLens</object-name>
+    <object-name>DLens</object-name>
+  </effect>
 
   <animation>
     <type>rotate</type>

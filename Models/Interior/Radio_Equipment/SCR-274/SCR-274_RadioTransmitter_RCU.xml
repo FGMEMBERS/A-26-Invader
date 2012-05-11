@@ -13,6 +13,10 @@
     <object-name>TransmitterButton</object-name>
 
     <!-- Objets transparents -->
+    <object-name>decreaseL</object-name>
+    <object-name>decreaseR</object-name>
+    <object-name>increaseL</object-name>
+    <object-name>increaseR</object-name>
   </animation>
 
 </PropertyList>

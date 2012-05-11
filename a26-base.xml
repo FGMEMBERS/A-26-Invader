@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <PropertyList>
 
@@ -44,6 +44,7 @@
         <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
         <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
         <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
+        <int type="int" n="8" alias="controls/cockpit-lights"> 50 </int>              <!--  8  cockpit lights -->
         <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
         <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
         <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
@@ -117,6 +118,7 @@
     </doors>
     <a26>
       <file>Aircraft/A-26-Invader/Nasal/liveries.nas</file>
+      <file>Aircraft/A-26-Invader/Nasal/electrical.nas</file>
       <file>Aircraft/A-26-Invader/Nasal/light.nas</file>
     </a26>
     <guns>

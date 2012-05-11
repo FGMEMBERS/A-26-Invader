@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <PropertyList>
 
@@ -14,6 +14,7 @@
   <path>vor.ac</path>
 
   <animation>
+    <!-- Objects Opaques -->
     <object-name>VOR.fond</object-name>
     <object-name>VOR.visses</object-name>
     <object-name>VOR.knob</object-name>
@@ -25,12 +26,16 @@
     <object-name>VOR.TO</object-name>
     <object-name>VOR.NAV</object-name>
 
+    <!-- Objects Transparents -->
     <object-name>VOR.vitre</object-name>
   </animation>
 
   <animation>
     <type>noshadow</type>
     <object-name>VOR.vitre</object-name>
+    <condition>
+      <not><property>sim/rendering/rembrandt</property></not>
+    </condition>
   </animation>
 
   <animation>
@@ -38,6 +43,9 @@
     <shader>chrome</shader>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>VOR.vitre</object-name>
+    <condition>
+      <not><property>sim/rendering/rembrandt</property></not>
+    </condition>
   </animation>
 
   <animation>
@@ -50,6 +58,9 @@
     <object-name>VOR.FR</object-name>
     <object-name>VOR.TO</object-name>
     <object-name>VOR.NAV</object-name>
+    <condition>
+      <not><property>sim/rendering/rembrandt</property></not>
+    </condition>
     <emission>
       <red>   0.50 </red>
       <green> 0.25 </green>

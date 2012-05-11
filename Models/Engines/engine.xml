@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <PropertyList>
 
@@ -83,15 +83,16 @@
 
   <animation>
     <type>range</type>
-    <object-name>LowPoly</object-name>
-    <min-property>sim/rendering/static-lod/detailed</min-property>
+    <object-name>HighPoly</object-name>
+    <min-m>0</min-m>
+    <max-property>/sim/rendering/static-lod/detailed</max-property>
   </animation>
 
   <animation>
     <type>range</type>
-    <object-name>HighPoly</object-name>
-    <min-m>0</min-m>
-    <max-property>sim/rendering/static-lod/detailed</max-property>
+    <object-name>LowPoly</object-name>
+    <min-property>/sim/rendering/static-lod/detailed</min-property>
+    <max-property>/sim/rendering/static-lod/bare</max-property>
   </animation>
 
 </PropertyList>

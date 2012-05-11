@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <!-- <PropertyList include="a26-jsbsim-cnf.xml"> -->
 <PropertyList include="a26-yasim-cnf.xml">
 
   <sim>
 
-    <description>A 26 Invader (YASim)</description>
+    <description>A 26 Invader (Rembrandt) (YASim)</description>
     <author>BARANGER Emmanuel (3D), JC_SV (panel)</author>
 
     <rating>

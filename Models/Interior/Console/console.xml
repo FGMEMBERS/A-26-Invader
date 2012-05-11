@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <PropertyList>
 
   <path>console.ac</path>
-   
+
   <animation>
     <!-- Objets opaques -->
     <object-name>console</object-name>
@@ -207,7 +207,7 @@
 
   <!-- LAMP LIGHT -->
   <model>
-    <path>Aircraft/A-26-Invader/Models/Interior/LightLamps/FluorLight.xml</path>
+    <path>Aircraft/A-26-Invader/Models/Interior/LightLamps/FluorLight_3.xml</path>
     <offsets>
       <x-m>  0.38000 </x-m>
       <y-m> -0.07324 </y-m>
@@ -218,10 +218,9 @@
     </offsets>
   </model>
 
-
-
   <!-- Rudder Trim  -->
-<!--  <animation>
+  <!--
+  <animation>
     <type>rotate</type>
     <object-name>RudderTrim</object-name>
     <property>controls/flight/rudder-trim</property>
@@ -267,10 +266,9 @@
       </binding>
     </action>
   </animation>
+  -->
 
--->
-
-  <!-- Parking  Brake  
+  <!-- Parking  Brake
   <animation>
     <type>rotate</type>
     <object-name>ParkingBrake</object-name>
@@ -287,7 +285,7 @@
      <z> 0 </z>
     </axis>
   </animation>
- 
+
   <animation>
     <type>pick</type>
     <visible>true</visible>
@@ -301,9 +299,9 @@
       </binding>
     </action>
   </animation>
--->
+  -->
 
-  <!-- Flaps Lever  
+  <!-- Flaps Lever
   <animation>
     <type>rotate</type>
     <object-name>FlapLever</object-name>
@@ -356,7 +354,4 @@
   </animation>
 -->
 
-
-
 </PropertyList>
-

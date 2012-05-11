@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <PropertyList>
 
   <path>turn.ac</path>
 
   <animation>
+    <!-- Objects Opaques -->
     <object-name>fond</object-name>
     <object-name>visses</object-name>
     <object-name>background</object-name>
@@ -12,12 +13,16 @@
     <object-name>face</object-name>
     <object-name>needle</object-name>
 
+    <!-- Objets transparents -->
     <object-name>vitre</object-name>
   </animation>
-
+<!--
   <animation>
     <type>noshadow</type>
     <object-name>vitre</object-name>
+    <condition>
+      <not><property>sim/rendering/rembrandt</property></not>
+    </condition>
   </animation>
 
   <animation>
@@ -25,28 +30,99 @@
     <shader>chrome</shader>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitre</object-name>
+    <condition>
+      <not><property>sim/rendering/rembrandt</property></not>
+    </condition>
   </animation>
-
+-->
   <animation>
     <type>material</type>
     <object-name>background</object-name>
     <object-name>ball</object-name>
     <object-name>face</object-name>
     <object-name>needle</object-name>
+    <condition>
+      <and>
+        <not><property>sim/rendering/rembrandt</property></not>
+        <property>systems/electrical/outputs/instrument-lights</property>
+      </and>
+    </condition>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
-      <red>   0.50 </red>
-      <green> 0.25 </green>
-      <blue>  0.25 </blue>
+	   <red>0.2</red>
+	   <green>0.25</green>
+	   <blue>0.7035</blue>
     </emission>
   </animation>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>vitre</object-name>
+    <object-name>background</object-name>
+    <object-name>needle</object-name>
+  </effect>
+ 
+    <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>background</object-name>
+    <object-name>needle</object-name>
+       <condition>
+	   <and>
+             <equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+                <value>0</value>
+             </equals>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[0]</property>
+	        <value>true</value>
+	      </equals>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[1]</property>
+	        <value>true</value>
+	      </equals>
+	   </and>
+       </condition>
+       <emission>
+	   <red>0.2</red>
+	   <green>0.25</green>
+	   <blue>0.7035</blue>
+       </emission>
+   </animation>
+
+   <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>background</object-name>
+    <object-name>needle</object-name>
+       <condition>
+             <equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+                <value>0</value>
+             </equals>
+	   <or>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[0]</property>
+	        <value>true</value>
+	      </equals>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[1]</property>
+	        <value>true</value>
+	      </equals>
+	   </or>
+       </condition>
+       <emission>
+		 <red>0.10</red>
+		 <green>0.125</green>
+		 <blue>0.3417</blue>
+       </emission>
+   </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>ball</object-name>
     <property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
-    <min>-1.1</min>
-    <max>1.1</max>
+    <min> -1.1 </min>
+    <max>  1.1 </max>
     <interpolation>
       <entry><ind> -1.1 </ind><dep> -6.2 </dep></entry>
       <entry><ind>  1.1 </ind><dep>  6.2 </dep></entry>
@@ -67,7 +143,7 @@
     <type>rotate</type>
     <object-name>needle</object-name>
     <property>/instrumentation/turn-indicator/indicated-turn-rate</property>
-    <factor>8.0</factor>
+    <factor> 8 </factor>
     <axis>
       <x> -1 </x>
       <y>  0 </y>
@@ -76,3 +152,4 @@
   </animation>
 
 </PropertyList>
+

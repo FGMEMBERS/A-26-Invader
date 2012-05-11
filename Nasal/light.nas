@@ -37,3 +37,9 @@ strobe.interval = 0;
 setprop( "/instrumentation/nav[0]/ident", 0 );
 setprop( "/instrumentation/nav[1]/ident", 0 );
 
+var FluorLamp1 = aircraft.light.new("/sim/model/lights/FluorLamp[0]", [0], "/controls/lighting/FluorLamp[0]");
+var FluorLamp2 = aircraft.light.new("/sim/model/lights/FluorLamp[1]", [0], "/controls/lighting/FluorLamp[1]");
+var FluorLamp3 = aircraft.light.new("/sim/model/lights/FluorLamp[2]", [0], "/controls/lighting/FluorLamp[2]");
+var FluorLamp4 = aircraft.light.new("/sim/model/lights/FluorLamp[3]", [0], "/controls/lighting/FluorLamp[3]");
+
+var RoofLight = aircraft.light.new("/sim/model/lights/RoofLamp[0]", [0], "/controls/lighting/RoofLamp[0]");

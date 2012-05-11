@@ -6,7 +6,7 @@
 
   <animation>
     <!-- Objets opaques -->
-    <object-name>fond</object-name>
+    <object-name>ReceiverCtrlBox</object-name>
     <object-name>RadioDial1</object-name>
     <object-name>RadioDial2</object-name>
     <object-name>RadioDial3</object-name>

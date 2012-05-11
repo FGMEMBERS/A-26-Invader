@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <PropertyList>
 
   <path>interior.ac</path> 
-
 
   <animation>
     <!-- Objets opaques -->
@@ -13,6 +12,7 @@
     <object-name>inttourporteD</object-name>
     <object-name>structure</object-name>
     <object-name>rivets</object-name>
+    <object-name>floor</object-name>
 
     <!-- Objets transparents -->
     <object-name>intvitres</object-name>
@@ -21,28 +21,83 @@
   </animation>
 
   <animation>
+    <type>select</type>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporteG</object-name>
+    <object-name>intvitreporteD</object-name>
+    <condition>
+       <equals>
+          <property>environment/rain-norm</property>
+          <value></value>
+       </equals>
+      <or>
+       <equals>
+          <property>environment/snow-norm</property>
+          <value></value>
+       </equals>
+      </or>
+    </condition>
+  </animation>
+
+<!--
+  <animation>
     <type>noshadow</type>
     <object-name>intvitres</object-name>
     <object-name>intvitreporteG</object-name>
     <object-name>intvitreporteD</object-name>
+    <condition>
+      <not><property>sim/rendering/rembrandt</property></not>
+    </condition>
   </animation>
 
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
+    <condition>
+      <not><property>sim/rendering/rembrandt</property></not>
+    </condition>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>intvitres</object-name>
     <object-name>intvitreporteG</object-name>
     <object-name>intvitreporteD</object-name>
   </animation>
+-->
+
+  <!--  NO REMBRANDT support for transparent objects 
+  <animation>
+    <type>noshadow</type>
+    <condition>
+      <not><property>sim/rendering/rembrandt</property></not>
+    </condition>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporteG</object-name>
+    <object-name>intvitreporteD</object-name>
+  </animation>
+-->
+
+  <!--  REMBRANDT support for transparent objects -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporteG</object-name>
+    <object-name>intvitreporteD</object-name>
+  </effect>
+
+  <effect>
+    <inherits-from>Aircraft/A-26-Invader/Models/Effects/reflects/bumpspec-cockpit_interior</inherits-from>
+    <object-name>floor</object-name>
+    <condition>
+      <property>sim/rendering/rembrandt</property>
+    </condition>
+  </effect>
 
   <!-- Pilote -->
   <model>
     <path>Aircraft/A-26-Invader/Models/Pilot/pilot.xml</path>
     <offsets>
       <x-m> -4.371 </x-m>
-      <y-m> -0.405 </y-m>
-      <z-m> -0.290 </z-m>
+      <y-m> -0.455 </y-m>
+      <z-m> -0.350 </z-m>
     </offsets>
   </model>
 
@@ -71,30 +126,6 @@
       <x-m> -4.703 </x-m>
       <y-m>  0.000 </y-m>
       <z-m> -0.349 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Overhead Panel -->
-  <model>
-    <path>Aircraft/A-26-Invader/Models/Interior/OverheadPanel/OverheadPanel.xml</path>
-    <offsets>
-      <x-m> -4.240 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.382 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/A-26-Invader/Models/Interior/OverheadPanel/OverheadSwitches.xml</path>
-  </model>
-
-  <!-- Overhead Lamp -->
-  <model>
-    <path>Aircraft/A-26-Invader/Models/Interior/Lamps/Lamp.xml</path>
-    <offsets>
-      <x-m> -3.885 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.315 </z-m>
     </offsets>
   </model>
 
@@ -141,9 +172,9 @@
     <property>instrumentation/doors/crew/position-norm</property>
     <factor> 50 </factor>
     <center>
-      <x-m> -4.193 </x-m>
-      <y-m> -0.741 </y-m>
-      <z-m> -0.247 </z-m>
+      <x-m> -4.277 </x-m>
+      <y-m> -0.716 </y-m>
+      <z-m> -0.252 </z-m>
     </center>
     <axis>
       <x> 1 </x>
@@ -164,9 +195,9 @@
     <property>instrumentation/doors/passenger/position-norm</property>
     <factor> -50 </factor>
     <center>
-      <x-m> -4.193 </x-m>
-      <y-m>  0.741 </y-m>
-      <z-m> -0.247 </z-m>
+      <x-m> -4.277 </x-m>
+      <y-m>  0.716 </y-m>
+      <z-m> -0.252 </z-m>
     </center>
     <axis>
       <x> 1 </x>
@@ -175,18 +206,17 @@
     </axis>
   </animation>
 
- <!-- HYDRAULICS  ( REAR ) -->
+  <!-- HYDRAULICS  ( REAR ) -->
   <model>
     <path>Aircraft/A-26-Invader/Models/Interior/Hydraulics/Hydraulics.xml</path>
     <offsets>
-       <x-m>-3.440 </x-m>
-       <y-m>-0.000</y-m>
-       <z-m>-0.063 </z-m>
+      <x-m> -3.440 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m> -0.063 </z-m>
     </offsets>
   </model>
 
-
- <!-- YOKE -->
+  <!-- YOKE -->
   <model>
     <path>Aircraft/A-26-Invader/Models/Interior/Yokes/yoke.xml</path>
     <offsets>
@@ -205,9 +235,9 @@
   <model>
     <path>Aircraft/A-26-Invader/Models/Interior/ashtray/ashtray.xml</path>
     <offsets>
-      <x-m> -4.022 </x-m>
+      <x-m> -4.000 </x-m>
       <y-m>  0.634 </y-m>
-      <z-m> -0.319 </z-m>
+      <z-m> -0.359 </z-m>
     </offsets>
   </model>
 
@@ -225,9 +255,9 @@
   <model>
     <path>Aircraft/A-26-Invader/Models/Interior/spare/spare.xml</path>
     <offsets>
-      <x-m> -4.625 </x-m>
+      <x-m> -4.615 </x-m>
       <y-m>  0.643 </y-m>
-      <z-m> -0.313 </z-m>
+      <z-m> -0.353 </z-m>
     </offsets>
   </model>
 
@@ -235,9 +265,9 @@
   <model>
     <path>Aircraft/A-26-Invader/Models/Interior/drift/drift.xml</path>
     <offsets>
-      <x-m> -3.922 </x-m>
+      <x-m> -3.910 </x-m>
       <y-m>  0.643 </y-m>
-      <z-m> -0.326 </z-m>
+      <z-m> -0.366 </z-m>
     </offsets>
   </model>
 
@@ -248,6 +278,30 @@
       <x-m> -4.297 </x-m>
       <y-m>  0.578 </y-m>
       <z-m> -0.629 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Overhead Panel -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/OverheadPanel/OverheadPanel.xml</path>
+    <offsets>
+      <x-m> -4.240 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.367 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/OverheadPanel/OverheadSwitches.xml</path>
+  </model>
+
+  <!-- Overhead Lamp -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Lamps/Lamp.xml</path>
+    <offsets>
+      <x-m> -3.885 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.300 </z-m>
     </offsets>
   </model>
 
