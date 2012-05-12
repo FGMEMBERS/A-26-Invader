@@ -21,7 +21,7 @@
     <object-name>shadow</object-name>
     <condition>
       <not><property>sim/freeze/replay-state</property></not>
-      <not><property>sim/rendering/rembrandt</property></not>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
     </condition>
   </animation>
 

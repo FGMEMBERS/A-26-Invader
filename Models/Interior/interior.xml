@@ -46,7 +46,7 @@
     <object-name>intvitreporteG</object-name>
     <object-name>intvitreporteD</object-name>
     <condition>
-      <not><property>sim/rendering/rembrandt</property></not>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
     </condition>
   </animation>
 
@@ -54,7 +54,7 @@
     <type>shader</type>
     <shader>chrome</shader>
     <condition>
-      <not><property>sim/rendering/rembrandt</property></not>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
     </condition>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>intvitres</object-name>
@@ -67,7 +67,7 @@
   <animation>
     <type>noshadow</type>
     <condition>
-      <not><property>sim/rendering/rembrandt</property></not>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
     </condition>
     <object-name>intvitres</object-name>
     <object-name>intvitreporteG</object-name>
@@ -87,7 +87,7 @@
     <inherits-from>Aircraft/A-26-Invader/Models/Effects/reflects/bumpspec-cockpit_interior</inherits-from>
     <object-name>floor</object-name>
     <condition>
-      <property>sim/rendering/rembrandt</property>
+      <property>sim/rendering/rembrandt/enabled</property>
     </condition>
   </effect>
 

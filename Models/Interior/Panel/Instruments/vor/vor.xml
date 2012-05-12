@@ -34,7 +34,7 @@
     <type>noshadow</type>
     <object-name>VOR.vitre</object-name>
     <condition>
-      <not><property>sim/rendering/rembrandt</property></not>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
     </condition>
   </animation>
 
@@ -44,7 +44,7 @@
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>VOR.vitre</object-name>
     <condition>
-      <not><property>sim/rendering/rembrandt</property></not>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
     </condition>
   </animation>
 
@@ -59,7 +59,7 @@
     <object-name>VOR.TO</object-name>
     <object-name>VOR.NAV</object-name>
     <condition>
-      <not><property>sim/rendering/rembrandt</property></not>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
     </condition>
     <emission>
       <red>   0.50 </red>

@@ -48,7 +48,7 @@
 		<technique n="7">
 		  <predicate>
 			<and>
-			  <property>/sim/rendering/rembrandt</property>
+			  <property>/sim/rendering/rembrandt/enabled</property>
 			  <or>
 				<less-equal>
 				  <value type="float">2.0</value>

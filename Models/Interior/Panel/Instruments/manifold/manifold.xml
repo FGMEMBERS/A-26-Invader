@@ -21,7 +21,7 @@
     <type>noshadow</type>
     <object-name>vitre</object-name>
     <condition>
-      <not><property>sim/rendering/rembrandt</property></not>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
     </condition>
   </animation>
 
@@ -31,7 +31,7 @@
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitre</object-name>
     <condition>
-      <not><property>sim/rendering/rembrandt</property></not>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
     </condition>
   </animation>
 -->
@@ -42,7 +42,7 @@
     <object-name>needle2</object-name>
     <condition>
       <and>
-        <not><property>sim/rendering/rembrandt</property></not>
+        <not><property>sim/rendering/rembrandt/enabled</property></not>
         <property>systems/electrical/outputs/instrument-lights</property>
       </and>
     </condition>
@@ -82,7 +82,7 @@
                 <value>0</value>
              </equals>
              <equals>
-                <property>sim/rendering/rembrandt</property>
+                <property>sim/rendering/rembrandt/enabled</property>
                 <value>true</value>
              </equals>
 	   </and>

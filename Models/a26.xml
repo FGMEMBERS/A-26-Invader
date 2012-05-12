@@ -198,7 +198,7 @@
     <shader>chrome</shader>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <condition>
-      <not><property>sim/rendering/rembrandt</property></not>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
     </condition>
     <object-name>vitres</object-name>
     <object-name>vitreporteG</object-name>
@@ -213,13 +213,13 @@
     <type>noshadow</type>
     <condition>
       <equal>
-        <property>sim/rendering/rembrandt</property>
+        <property>sim/rendering/rembrandt/enabled</property>
         <value>false</value>
       </equal>
     </condition>
 
     <condition>
-      <not><property>sim/rendering/rembrandt</property></not>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
     </condition>
     <object-name>vitres</object-name>
     <object-name>vitreporteG</object-name>
