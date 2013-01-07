@@ -127,19 +127,6 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-<!--
-    <diffuse>
-      <red-prop>diffuse/red</red-prop>
-      <green-prop>diffuse/green</green-prop>
-      <blue-prop>diffuse/blue</blue-prop>
-    </diffuse>
-
-    <ambient>
-      <red-prop>ambient/red</red-prop>
-      <green-prop>ambient/green</green-prop>
-      <blue-prop>ambient/blue</blue-prop>
-    </ambient>
--->
     <specular>
       <red-prop>specular/red</red-prop>
       <green-prop>specular/green</green-prop>
@@ -151,11 +138,6 @@
       <green-prop>emission/green</green-prop>
       <blue-prop>emission/blue</blue-prop>
     </emission>
-<!--
-    <shininess>
-      <shininess-prop>shininess</shininess-prop>
-    </shininess>
--->
   </animation>
 
   <effect>
@@ -192,35 +174,19 @@
     <object-name>tourelletoit</object-name>
     <object-name>tourellesous</object-name>
   </effect>
-<!--
+
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <condition>
-      <not><property>sim/rendering/rembrandt/enabled</property></not>
-    </condition>
     <object-name>vitres</object-name>
     <object-name>vitreporteG</object-name>
     <object-name>vitreporteD</object-name>
   </animation>
--->
 
   <!--  NO REMBRANDT support for transparent objects -->
-
-<!-- 
- <animation>
+  <animation>
     <type>noshadow</type>
-    <condition>
-      <equal>
-        <property>sim/rendering/rembrandt/enabled</property>
-        <value>false</value>
-      </equal>
-    </condition>
-
-    <condition>
-      <not><property>sim/rendering/rembrandt/enabled</property></not>
-    </condition>
     <object-name>vitres</object-name>
     <object-name>vitreporteG</object-name>
     <object-name>vitreporteD</object-name>
@@ -230,34 +196,44 @@
     <object-name>propdiscD</object-name>
     <object-name>cables</object-name>
   </animation>
--->
 
   <!--  REMBRANDT support for transparent objects -->
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
     <object-name>vitres</object-name>
     <object-name>vitreporteG</object-name>
     <object-name>vitreporteD</object-name>
-    <object-name>propdiscG</object-name>
     <object-name>propblurG</object-name>
-    <object-name>propdiscD</object-name>
+    <object-name>propdiscG</object-name>
     <object-name>propblurD</object-name>
+    <object-name>propdiscD</object-name>
+    <object-name>cables</object-name>
   </effect>
 
   <!-- NO REMBRANDT shadow -->
   <model>
     <path>Aircraft/A-26-Invader/Models/shadow.xml</path>
     <offsets>
-      <x-m> -0.108 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -2.320 </z-m>
+      <x-m>  0.00 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m> -2.56 </z-m>
     </offsets>
   </model>
 
   <!-- Interieur -->
   <model>
+    <name>Interieur</name>
     <path>Aircraft/A-26-Invader/Models/Interior/interior.xml</path>
   </model>
+
+  <!-- For Rembrandt -->
+  <animation>
+    <type>noshadow</type>
+    <object-name>Interieur</object-name>
+  </animation>
 
   <!-- Cranking -->
   <!-- Left -->

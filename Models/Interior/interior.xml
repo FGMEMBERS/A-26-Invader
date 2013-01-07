@@ -39,7 +39,6 @@
     </condition>
   </animation>
 
-<!--
   <animation>
     <type>noshadow</type>
     <object-name>intvitres</object-name>
@@ -53,31 +52,25 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <condition>
-      <not><property>sim/rendering/rembrandt/enabled</property></not>
-    </condition>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>intvitres</object-name>
     <object-name>intvitreporteG</object-name>
     <object-name>intvitreporteD</object-name>
   </animation>
--->
 
-  <!--  NO REMBRANDT support for transparent objects 
   <animation>
     <type>noshadow</type>
-    <condition>
-      <not><property>sim/rendering/rembrandt/enabled</property></not>
-    </condition>
     <object-name>intvitres</object-name>
     <object-name>intvitreporteG</object-name>
     <object-name>intvitreporteD</object-name>
   </animation>
--->
 
   <!--  REMBRANDT support for transparent objects -->
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
     <object-name>intvitres</object-name>
     <object-name>intvitreporteG</object-name>
     <object-name>intvitreporteD</object-name>

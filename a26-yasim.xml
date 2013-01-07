@@ -56,7 +56,7 @@
           length="9.906"
           taper="0.48"
 	  dihedral="5"
-          camber="0.1"
+          camber="0.2"
           sweep="-3">
           <stall aoa="9.254" width="6" peak="2.5"/>
           <flap0 start="0.025" end="0.630" lift="1.6" drag="1.6"/>
@@ -212,11 +212,11 @@
           <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
     </gear>
 
-    <tank x="2.82" y="6.0" z="-0.18" capacity="1600.0"/>
-    <tank x="2.82" y="-6.0" z="-0.18" capacity="1600.0"/>
+    <tank x="4" y=" 6" z="-0.018" capacity="1600"/>
+    <tank x="4" y="-6" z="-0.018" capacity="1600"/>
 
-    <!-- CG Theorique Centre de la corde: x=0.691 y=0.0 z=0.127" -->
-    <ballast x="8" y="0.0" z="-1.5" mass="2500"/>
+    <!-- Mass displacment -->
+    <ballast x="8" y="0" z="-1.5" mass="2600"/>
 
 </airplane>
 
