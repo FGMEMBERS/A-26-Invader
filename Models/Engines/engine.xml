@@ -13,12 +13,12 @@
 
   <model>
     <name>Bloc1</name>
-    <path>Aircraft/F7F-Tigercat/Models/Engines/blocpiston.xml</path>
+    <path>Aircraft/Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
   </model>
 
   <model>
     <name>Bloc2</name>
-    <path>Aircraft/F7F-Tigercat/Models/Engines/blocpiston.xml</path>
+    <path>Aircraft/Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 40 </roll-deg>
     </offsets>
@@ -26,7 +26,7 @@
 
   <model>
     <name>Bloc3</name>
-    <path>Aircraft/F7F-Tigercat/Models/Engines/blocpiston.xml</path>
+    <path>Aircraft/Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 80 </roll-deg>
     </offsets>
@@ -34,7 +34,7 @@
 
   <model>
     <name>Bloc4</name>
-    <path>Aircraft/F7F-Tigercat/Models/Engines/blocpiston.xml</path>
+    <path>Aircraft/Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 120 </roll-deg>
     </offsets>
@@ -42,7 +42,7 @@
 
   <model>
     <name>Bloc5</name>
-    <path>Aircraft/F7F-Tigercat/Models/Engines/blocpiston.xml</path>
+    <path>Aircraft/Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 160 </roll-deg>
     </offsets>
@@ -50,7 +50,7 @@
 
   <model>
     <name>Bloc6</name>
-    <path>Aircraft/F7F-Tigercat/Models/Engines/blocpiston.xml</path>
+    <path>Aircraft/Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 200 </roll-deg>
     </offsets>
@@ -58,7 +58,7 @@
 
   <model>
     <name>Bloc7</name>
-    <path>Aircraft/F7F-Tigercat/Models/Engines/blocpiston.xml</path>
+    <path>Aircraft/Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 240 </roll-deg>
     </offsets>
@@ -66,7 +66,7 @@
 
   <model>
     <name>Bloc8</name>
-    <path>Aircraft/F7F-Tigercat/Models/Engines/blocpiston.xml</path>
+    <path>Aircraft/Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 280 </roll-deg>
     </offsets>
@@ -74,7 +74,7 @@
 
   <model>
     <name>Bloc9</name>
-    <path>Aircraft/F7F-Tigercat/Models/Engines/blocpiston.xml</path>
+    <path>Aircraft/Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 320 </roll-deg>
     </offsets>
