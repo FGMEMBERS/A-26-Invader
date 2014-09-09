@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Radio_Equipment/SCR-274/SCR-274_RadioReceiver_RCU.xml</path>
+    <offsets>
+      <x-m> -4.543 </x-m>
+      <y-m> -0.711 </y-m>
+      <z-m> -0.342 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Radio_Equipment/SCR-274/SCR-274_RadioTransmitter_RCU.xml</path>
+    <offsets>
+      <x-m> -4.573 </x-m>
+      <y-m> -0.711 </y-m>
+      <z-m> -0.332 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+
+</PropertyList>
+

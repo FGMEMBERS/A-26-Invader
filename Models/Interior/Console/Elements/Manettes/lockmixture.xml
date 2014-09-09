@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>lockmixture.ac</path>
+
+  <animation>
+    <object-name>MixtureLockLever</object-name>
+    <object-name>MixtureLockSphere</object-name>
+  </animation>
+
+  <animation>
+    <name>MixtureLock</name>
+    <object-name>MixtureLockLever</object-name>
+    <object-name>MixtureLockSphere</object-name>
+  </animation>
+
+</PropertyList>
+

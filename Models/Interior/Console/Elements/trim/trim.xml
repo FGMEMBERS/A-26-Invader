@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>trim.ac</path>
+
+  <animation>
+    <object-name>ElevatorTrimWheel</object-name>
+  </animation>
+
+  <!-- Elevator Trim Wheel  -->
+  <animation>
+    <type>rotate</type>
+    <object-name>ElevatorTrimWheel</object-name>
+    <property>controls/flight/elevator-trim</property>
+    <factor> 100 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>ElevatorTrimWheel</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/flight/elevator-trim</property>
+        <step type="double">0.05</step>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>ElevatorTrimWheel</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/flight/elevator-trim</property>
+        <step type="double">-0.05</step>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <!-- Boutons -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/divers/bouton.xml</path>
+    <offsets>
+      <x-m> 0.224 </x-m>
+      <y-m> 0.032 </y-m>
+      <z-m> 0.078 </z-m>
+      <heading-deg> 90 </heading-deg>
+      <pitch-deg> -180 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Console/Elements/divers/bouton.xml</path>
+    <offsets>
+      <x-m> 0.261 </x-m>
+      <y-m> 0.032 </y-m>
+      <z-m> 0.053 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
+

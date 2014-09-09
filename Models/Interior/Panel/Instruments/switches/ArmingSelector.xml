@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>ArmingSelector.ac</path>
+
+  <animation>
+    <object-name>selector</object-name>
+
+    <object-name>cw</object-name>
+    <object-name>ccw</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>cw</object-name>
+    <object-name>ccw</object-name>
+    <visible>false</visible>
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/A-26-Invader/Models/Effects/reflect-opaque</inherits-from>
+    <object-name>selector</object-name>
+  </effect>
+
+</PropertyList>
+

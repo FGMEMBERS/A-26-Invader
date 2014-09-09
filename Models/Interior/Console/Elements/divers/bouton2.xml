@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>bouton2.ac</path>
+
+  <animation>
+    <object-name>bouton</object-name>
+
+  </animation>
+
+<!--
+  <animation>
+    <type>material</type>
+    <object-name>bouton</object-name>
+    <emission>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+-->
+
+</PropertyList>

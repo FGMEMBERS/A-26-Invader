@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+   <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+    <object-name>texte</object-name>
+    <object-name>face_emit</object-name>
+    
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Attitude -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> -0.081 </x-m>
+      <y-m> -0.130 </y-m>
+      <z-m>  0.250 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.086 </x-m>
+      <y-m> -0.397 </y-m>
+      <z-m>  0.246 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.084 </x-m>
+      <y-m> -0.397 </y-m>
+      <z-m>  0.155 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Turn -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> -0.082 </x-m>
+      <y-m> -0.304 </y-m>
+      <z-m>  0.155 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.085 </x-m>
+      <y-m> -0.199 </y-m>
+      <z-m>  0.155 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Compass -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m> -0.079 </x-m>
+      <y-m> -0.257 </y-m>
+      <z-m>  0.250 </z-m>
+    </offsets>
+  </model>
+
+  <!--RPM -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m> -0.085 </x-m>
+      <y-m>  0.075 </y-m>
+      <z-m>  0.320 </z-m>
+    </offsets>
+  </model>
+
+  <!--MAN -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/manifold/manifold.xml</path>
+    <offsets>
+      <x-m> -0.085 </x-m>
+      <y-m> -0.015 </y-m>
+      <z-m>  0.320 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ADDED  by  JC_SV  -->
+  <!-- AIR TEMP  -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/air-temp/airtemp.xml</path>
+     <offsets>
+      <x-m> -0.082 </x-m>
+      <y-m> -0.272 </y-m>
+      <z-m>  0.330 </z-m>
+    </offsets> 
+  </model>
+
+  <!-- DE-ICER PRESSURE  -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/deicepress/deicepress.xml</path>
+     <offsets>
+      <x-m> -0.083 </x-m>
+      <y-m> -0.197 </y-m>
+      <z-m>  0.330 </z-m>
+    </offsets> 
+  </model>
+
+
+  <!-- SUCTION GAGE ( VACUUM  )  -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/vacuum/vacuum.xml</path>
+     <offsets>
+      <x-m> -0.083 </x-m>
+      <y-m> -0.122 </y-m>
+      <z-m>  0.330 </z-m>
+    </offsets> 
+  </model>
+
+   <!-- CLOCK  -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+     <offsets>
+     <x-m> -0.083 </x-m>
+     <y-m> -0.370 </y-m>
+     <z-m>  0.315 </z-m>
+    </offsets> 
+  </model> 
+
+  <!-- RRC  -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/rrc/rcc.xml</path>
+     <offsets>
+     <x-m> -0.085 </x-m>
+     <y-m> -0.397 </y-m>
+     <z-m>  0.066 </z-m>
+    </offsets> 
+  </model>
+
+  <!-- RADIO COMPASS --> 
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/radio-compass/radio-compass.xml</path>
+     <offsets>
+     <x-m> -0.085 </x-m>
+     <y-m> -0.301 </y-m>
+     <z-m>  0.066 </z-m>
+    </offsets>
+  </model>
+
+  <!-- FUEL GAUGE MAIN  -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/FuelGauge/FuelGauge.xml</path>
+     <offsets>
+     <x-m> -0.085 </x-m>
+     <y-m> -0.090 </y-m>
+     <z-m>  0.066 </z-m>
+    </offsets> 
+  </model>
+  <!-- FUEL GAUGE AUX  -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/FuelGauge/FuelGauge_Aux.xml</path>
+     <offsets>
+     <x-m> -0.085 </x-m>
+     <y-m> -0.180 </y-m>
+     <z-m>  0.066 </z-m>
+    </offsets> 
+  </model>
+ 
+  <!-- HYDRAULIC PRESSURE -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/hydra_press/hydraulic.xml</path>
+     <offsets>
+     <x-m> -0.080 </x-m>
+     <y-m>  0.070 </y-m>
+     <z-m>  0.066 </z-m>
+    </offsets> 
+  </model>
+   <!-- BRAKE PRESSURE -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/brake_press/brake_press.xml</path>
+     <offsets>
+     <x-m> -0.080 </x-m>
+     <y-m> -0.010 </y-m>
+     <z-m>  0.066 </z-m>
+    </offsets> 
+  </model> 
+
+  <!-- FLAPS GEAR  -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/flapsgear/flapgear.xml</path>
+     <offsets>
+     <x-m> -0.083 </x-m>
+     <y-m> -0.250 </y-m>
+     <z-m> -0.015 </z-m>
+    </offsets> 
+  </model>
+
+  <!-- AMP  -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/ammeter/ammeter.xml</path>
+     <offsets>
+     <x-m> -0.081 </x-m>
+     <y-m> -0.009 </y-m>
+     <z-m> -0.003 </z-m>
+    </offsets> 
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/ammeter/ammeter.xml</path>
+     <offsets>
+     <x-m> -0.081 </x-m>
+     <y-m> -0.090 </y-m>
+     <z-m> -0.003 </z-m>
+    </offsets> 
+  </model>
+
+  <!-- VOLTMETER -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/voltmeter/voltmeter.xml</path>
+     <offsets>
+     <x-m> -0.081 </x-m>
+     <y-m>  0.074 </y-m>
+     <z-m> -0.003 </z-m>
+    </offsets> 
+  </model> 
+
+  <!-- VOR1 
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/vor/vor.xml</path>
+    <offsets>
+     <x-m> -0.082 </x-m>
+     <y-m> -0.301 </y-m>
+     <z-m>  0.041 </z-m>
+    </offsets> 
+  </model>
+  --> 
+
+  <!-- CARB -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/carb/carb.xml</path>
+    <offsets>
+      <x-m> -0.083 </x-m>
+      <y-m> -0.105 </y-m>
+      <z-m>  0.155 </z-m>
+    </offsets>
+  </model>
+
+  <!-- CYL TEMP --> 
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/cyl/cyl.xml</path>
+    <offsets>
+     <x-m> -0.083 </x-m>
+     <y-m> -0.015 </y-m>
+     <z-m>  0.155 </z-m>
+    </offsets> 
+  </model>
+
+  <!-- FUEL PRESS --> 
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/fuelpress/fuel_pressure.xml</path>
+    <offsets>
+     <x-m> -0.085 </x-m>
+     <y-m> -0.015 </y-m>
+     <z-m>  0.237 </z-m>
+    </offsets> 
+  </model>
+
+  <!-- OIL PRESS-->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/oilpress/oilpress.xml</path>
+    <offsets>
+      <x-m> -0.083 </x-m>
+      <y-m>  0.076 </y-m>
+      <z-m>  0.237 </z-m>
+    </offsets>
+  </model>
+
+  <!-- OIL TEMP -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/oiltemp/oiltemp.xml</path>
+    <offsets>
+      <x-m> -0.083 </x-m>
+      <y-m>  0.076 </y-m>
+      <z-m>  0.155 </z-m>
+    </offsets>
+  </model>
+
+  <!-- PANEL SWITCHES -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/switches/panel-switches.xml</path>
+  </model>
+ 
+  <!-- LAMP LIGHTS -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/LightLamps/FluorLight.xml</path>
+    <offsets>
+      <x-m>  0.010 </x-m>
+      <y-m> -0.665 </y-m>
+      <z-m>  0.200 </z-m>
+      <roll-deg> 110 </roll-deg>
+
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/LightLamps/FluorLight.xml</path>
+    <offsets>
+      <x-m>  0.010 </x-m>
+      <y-m>  0.155 </y-m>
+      <z-m>  0.385 </z-m>
+    </offsets>
+  </model>
+
+  <!-- GUNSIGHT -->
+  <model>
+    <path>Aircraft/A-26-Invader/Models/Interior/Panel/Instruments/N-9_Gunsight/N-9_Gunsight.xml</path>
+    <offsets>
+      <x-m> -0.048 </x-m>
+      <y-m> -0.465 </y-m>
+      <z-m>  0.297 </z-m>
+    </offsets>
+  </model>
+
+
+  <!-- UV TEXT  EMIT -->
+   <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>face_emit</object-name>
+  </effect>
+  
+    <animation>
+    <type>select</type>
+    <object-name>face_emit</object-name>
+	<condition>
+             <equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+                <value>0</value>
+             </equals>
+	</condition>
+    </animation> 
+
+    <animation>
+    <type>material</type>
+    <object-name>face_emit</object-name>
+       <condition>
+	   <and>
+             <equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+                <value>0</value>
+             </equals>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[0]</property>
+	        <value>true</value>
+	      </equals>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[1]</property>
+	        <value>true</value>
+	      </equals>
+	   </and>
+       </condition>
+       <emission>
+	   <red>0.2</red>
+	   <green>0.25</green>
+	   <blue>0.7035</blue>
+       </emission>
+   </animation>
+
+   <animation>
+    <type>material</type>
+    <object-name>face_emit</object-name>
+       <condition>
+             <equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+                <value>0</value>
+             </equals>
+	   <or>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[0]</property>
+	        <value>true</value>
+	      </equals>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[1]</property>
+	        <value>true</value>
+	      </equals>
+	   </or>
+       </condition>
+       <emission>
+		 <red>0.10</red>
+		 <green>0.125</green>
+		 <blue>0.3417</blue>
+       </emission>
+   </animation>
+
+</PropertyList>
+

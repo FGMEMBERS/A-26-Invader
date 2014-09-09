@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>oiltemp.ac</path>
+
+  <animation>
+    <!-- Objects Opaques -->
+    <object-name>fond</object-name>
+    <object-name>fond2</object-name>
+    <object-name>visses</object-name>
+    <object-name>face</object-name>
+    <object-name>needleL</object-name>
+    <object-name>needleR</object-name>
+    <object-name>visses</object-name>
+    <object-name>face_emit</object-name>
+
+    <!-- Objects Transparents -->
+    <object-name>vitre</object-name>
+  </animation>
+<!--
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+    <condition>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+    <condition>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+  </animation>
+-->
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needleL</object-name>
+    <object-name>needleR</object-name>
+    <condition>
+      <and>
+        <not><property>sim/rendering/rembrandt/enabled</property></not>
+        <property>systems/electrical/outputs/instrument-lights</property>
+      </and>
+    </condition>
+    <emission>
+	   <red>0.2</red>
+	   <green>0.25</green>
+	   <blue>0.7035</blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>vitre</object-name>
+    <condition>
+             <not-equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+                <value>0</value>
+             </not-equals>
+   </condition>
+  </animation>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>face_emit</object-name>
+    <object-name>vitre</object-name>
+    <object-name>needleL</object-name>
+    <object-name>needleR</object-name>
+  </effect>
+
+    <animation>
+    <type>select</type>
+    <object-name>face_emit</object-name>
+	<condition>
+	   <and>
+             <equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+                <value>0</value>
+             </equals>
+             <equals>
+                <property>sim/rendering/rembrandt/enabled</property>
+                <value>true</value>
+             </equals>
+	   </and>
+	</condition>
+    </animation> 
+
+    <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>face_emit</object-name>
+    <object-name>needleL</object-name>
+    <object-name>needleR</object-name>
+       <condition>
+	   <and>
+             <equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+                <value>0</value>
+             </equals>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[0]</property>
+	        <value>true</value>
+	      </equals>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[1]</property>
+	        <value>true</value>
+	      </equals>
+	   </and>
+       </condition>
+       <emission>
+	   <red>0.2</red>
+	   <green>0.25</green>
+	   <blue>0.7035</blue>
+       </emission>
+   </animation>
+
+   <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>face_emit</object-name>
+    <object-name>needleL</object-name>
+    <object-name>needleR</object-name>
+       <condition>
+             <equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+                <value>0</value>
+             </equals>
+	   <or>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[0]</property>
+	        <value>true</value>
+	      </equals>
+	      <equals>
+	        <property>/sim/model/lights/FluorLamp[1]</property>
+	        <value>true</value>
+	      </equals>
+	   </or>
+       </condition>
+       <emission>
+		 <red>0.10</red>
+		 <green>0.125</green>
+		 <blue>0.3417</blue>
+       </emission>
+   </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>needleL</object-name>
+    <property>engines/engine/oil-temperature-degc</property>
+    <interpolation>
+      <entry><ind> -50 </ind><dep>   0.0 </dep></entry>
+      <entry><ind>   0 </ind><dep>  26.5 </dep></entry>
+      <entry><ind>  50 </ind><dep>  56.8 </dep></entry>
+      <entry><ind> 100 </ind><dep>  89.2 </dep></entry>
+      <entry><ind> 150 </ind><dep> 114.0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.023 </y-m>
+      <z-m>  0.000</z-m>  
+    </center>
+    <axis> 
+      <x>  1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>needleR</object-name>
+    <property>engines/engine[1]/oil-temperature-degc</property>
+    <interpolation>
+      <entry><ind> -50 </ind><dep>   0.0 </dep></entry>
+      <entry><ind>   0 </ind><dep>  26.5 </dep></entry>
+      <entry><ind>  50 </ind><dep>  56.8 </dep></entry>
+      <entry><ind> 100 </ind><dep>  89.2 </dep></entry>
+      <entry><ind> 150 </ind><dep> 114.0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.023 </y-m>
+      <z-m> 0.000 </z-m>  
+    </center>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

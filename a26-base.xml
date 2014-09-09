@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+ 
+    <author>BARANGER Emmanuel (3D), JC_SV (panel)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+   
+    <fuel-fraction>0.8</fuel-fraction>
+  
+    <startup>
+      <splash-texture>Aircraft/A-26-Invader/a26-splash.png</splash-texture>
+    </startup>
+
+    <model>
+      <path>Aircraft/A-26-Invader/Models/a26.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+      <config>
+        <table-up type="bool">false</table-up>
+      </config>
+    </model>
+
+    <submodels> 
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/A-26-Invader/Models/Effects/guns/submodels.xml</path>
+    </submodels>
+
+    <sound>
+      <path>Aircraft/A-26-Invader/Sounds/a26-sound.xml</path>
+    </sound>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
+        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
+        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
+        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
+        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
+        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
+        <int type="int" n="8" alias="controls/cockpit-lights"> 50 </int>              <!--  8  cockpit lights -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3" alias="/smoke/colors/knob-red">1</float>                      <!-- 3 smoke mixer red setting -->
+        <float n="4" alias="/smoke/colors/knob-green">1</float>                    <!-- 4 smoke mixer green setting -->
+        <float n="5" alias="/smoke/colors/knob-blue">1</float>                     <!-- 5 smoke mixer blue setting -->
+        <string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
+      </generic>
+    </multiplay>
+
+    <flaps>
+      <setting>0.00</setting>
+      <setting>0.25</setting>
+      <setting>0.50</setting>
+      <setting>0.75</setting>
+      <setting>1.00</setting>
+    </flaps>
+
+    <help>
+      <title>A 26 Invader</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close crew door</desc>
+      </key>
+      <key>
+        <name>D</name>
+        <desc>Open/Close passanger door</desc>
+      </key>
+      <key>
+        <name>e</name>
+        <desc>Guns fire</desc>
+      </key>
+    </help>
+
+    <menubar include="Dialogs/a26-menu.xml"/>
+
+  </sim>
+
+  <controls>
+    <engines>
+      <engine n="0">
+        <magnetos>0</magnetos>
+      </engine>
+      <engine n="1">
+        <magnetos>0</magnetos>
+      </engine>
+    </engines>
+  </controls>
+
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+      <rpm>500</rpm>
+      <running>false</running>
+    </engine>
+    <engine n="1">
+      <engine-num type="int">1</engine-num>
+      <rpm>500</rpm>
+      <running>false</running>
+    </engine>
+  </engines>
+
+  <input>
+    <keyboard include="Nasal/a26-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <doors>
+      <file>Aircraft/A-26-Invader/Nasal/doors.nas</file>
+    </doors>
+    <a26>
+      <file>Aircraft/A-26-Invader/Nasal/liveries.nas</file>
+      <file>Aircraft/A-26-Invader/Nasal/electrical.nas</file>
+      <file>Aircraft/A-26-Invader/Nasal/light.nas</file>
+    </a26>
+    <guns>
+      <file>Aircraft/A-26-Invader/Nasal/weapons.nas</file>
+      <file>Aircraft/A-26-Invader/Nasal/revi.nas</file>
+    </guns>
+    <SCR_522C>
+       <file>Aircraft/A-26-Invader/Models/Interior/Radio_Equipment/SCR-522C/Nasal/SCR-522C.nas</file>
+    </SCR_522C>
+  </nasal>
+
+</PropertyList>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>red_pilot.ac</path>
+
+  <animation>
+    <object-name>LedBase</object-name>
+    <object-name>Led</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>LedBase</object-name>
+    <object-name>Led</object-name>
+    <emission>
+      <red>   0.003 </red>
+      <green> 0.003 </green>
+      <blue>  0.003 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+</PropertyList>

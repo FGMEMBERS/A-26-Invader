@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>lockpropeller.ac</path>
+
+  <animation>
+    <object-name>PropellerLockLever</object-name>
+    <object-name>PropellerLockSphere</object-name>
+  </animation>
+
+  <animation>
+    <name>PropellerLock</name>
+    <object-name>PropellerLockLever</object-name>
+    <object-name>PropellerLockSphere</object-name>
+  </animation>
+
+</PropertyList>
+
