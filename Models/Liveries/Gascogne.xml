@@ -4,7 +4,7 @@
 <sim>
   <model>
     <livery>
-      <name type="string">Armé de l'Air - Gascogne</name>
+      <name type="string">Armée de l'Air - Gascogne</name>
       <texture>Liveries/Gascogne.png</texture>
       <specular>
         <red>0.3</red>
