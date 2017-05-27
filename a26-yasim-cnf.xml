@@ -14,6 +14,21 @@ September 2009 BARANGER Emmanuel
     <flight-model>yasim</flight-model>
     <aero>a26-yasim</aero>
 
+    <tags>
+      <tag>douglas</tag>
+      <tag>mid-wing</tag>
+      <tag>tricycle</tag>
+      <tag>retractable-gear</tag>
+      <tag>twin-engine</tag>
+      <tag>radial</tag>
+      <tag>piston</tag>
+      <tag>bomber</tag>
+      <tag>1940s</tag>
+      <tag>1950s</tag>
+      <tag>1960s</tag>
+   
+    </tags>
+
   </sim>
     
 </PropertyList>
